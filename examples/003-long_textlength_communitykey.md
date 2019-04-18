@@ -40,6 +40,8 @@
 
 ## Error Response
 
+**Code** : `400 Bad Request`
+
 ```json
 {
     "success": false,
