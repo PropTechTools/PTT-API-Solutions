@@ -16,7 +16,7 @@
 | requester     | customer |
 | textlength     | short |
 
-#### Success Response
+## Success Response
 
 **Code** : `200 OK`
 
@@ -33,6 +33,17 @@
         "absatz1": "Der Markt Zusmarshausen  <...> Landeshauptstadt München.",
         "absatz2": " Zusmarshausen beherbergt  <...> eines Mittelzentrums.",
         "absatz3": " Zusmarshausen wird  <...> Stand: Februar 2019)."
+    }
+}
+```
+
+## Error Response
+
+```json
+{
+    "success": false,
+    "message": "<error-message",
+    "data": { 
     }
 }
 ```
