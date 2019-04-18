@@ -1,7 +1,8 @@
+# GET-Request: Longt textlength with address
 
 **BASE-URL**: https://www.proptechapi.de
 
-**URL** : `/dte/macrolage/json?`
+**URL** : `/dte/macrolage/json?apiKey=<apikey>&latlng=48.4171645,10.6796138&name=<name>&requester=<customer>&textlength=long&fazit=sehr_gut`
 
 **Method** : `GET`
 
@@ -10,12 +11,13 @@
 | parameter        | value         
 | ------------- |:-------------:| 
 | apiKey     | `apikey` | 
-| latlng     | `lat,lng` |
+| latlng     | 48.4171645,10.6796138 |
 | name     | `name` |
 | requester     | customer |
-| textlength     | short |
+| textlength     | long |
+| fazit     | sehr_gut  |
 
-#### Success Response
+## Success Response
 
 **Code** : `200 OK`
 
@@ -32,6 +34,17 @@
         "absatz1": "Der Markt Zusmarshausen  <...> Landeshauptstadt München.",
         "absatz2": " Zusmarshausen beherbergt  <...> eines Mittelzentrums.",
         "absatz3": " Zusmarshausen wird  <...> Stand: Februar 2019)."
+    }
+}
+```
+
+## Error Response
+
+```json
+{
+    "success": false,
+    "message": "<error-message",
+    "data": { 
     }
 }
 ```

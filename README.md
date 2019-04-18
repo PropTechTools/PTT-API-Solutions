@@ -15,15 +15,17 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
   * latlng
   * communityKey
 * textlength
-  * Possible values: short/long
+  * Possible values: `< short | long >`
 * fazit
   * `fazit` must be set if the textlength has the value ```long```
-  * Possible values: sehr_gut, gut, durchschnittlich, maessig, schlecht
+  * Possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
 
 
 ## Examples
 
-* [GET-Request: Short Textlength](examples/001-short_textlength.md)
+* [GET-Request: Short Textlength with coordinations](examples/001-short_textlength_coordinations.md)
+* [GET-Request: Long Textlength with address](examples/002-long_textlength_address.md)
+* [GET-Request: Long Textlength with community key](examples/003-long_textlength_communitykey.md)
 
 
 
