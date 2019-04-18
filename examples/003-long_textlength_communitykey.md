@@ -2,7 +2,7 @@
 
 **BASE-URL**: https://www.proptechapi.de
 
-**URL** : `/dte/macrolage/json?apiKey=<apikey>&latlng=48.4171645,10.6796138&name=<name>&requester=<customer>&textlength=long&fazit=sehr_gut`
+**URL** : `/dte/macrolage/json?apiKey=<apikey>&communityKey=072355007001&name=<name>&requester=<customer>&textlength=long&fazit=sehr_gut`
 
 **Method** : `GET`
 
@@ -11,7 +11,7 @@
 | parameter        | value         
 | ------------- |:-------------:| 
 | apiKey     | `apikey` | 
-| latlng     | 48.4171645,10.6796138 |
+| communityKey     | 072355007001 |
 | name     | `name` |
 | requester     | customer |
 | textlength     | long |
