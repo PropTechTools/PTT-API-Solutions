@@ -5,7 +5,7 @@ The "Macrolage" module enables the processing request of a meaningful macro loca
 
 ## PTT API: Macrolage
 
-### 1) `D`eveloping and `T`esting `E`nvironment (DTE)
+### 1) `D`eveloping and `T`esting `E`nvironment (DTE-System)
 
 **Attention:** The user and api-key shown below belong to a test account whose request range is limited to five communities only. 
 <br/>
