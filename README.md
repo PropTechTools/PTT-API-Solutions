@@ -8,15 +8,15 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
 ### 1) `D`eveloping and `T`sting `E`nvironment (DTE)
 
 <br/>
-**Attention**: The used user and api-key belong to a test acount and is limited to 5 cities in germany. 
+**Attention:** The used user and api-key belong to a test acount and is limited to 5 cities in germany. 
 <br/>
 <br/>
-**Test-Apikey**: test.user@proptechtools.de<br>
-**Test-User**: gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU
+**Test-Apikey:** test.user@proptechtools.de<br>
+**Test-User:** gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU
 <br/>
 <br/>
 <br/>
-The following 5 cities are available in the dte system:
+The following 5 cities are available in the DTE-system:
 
 | community key   | city type | city name |   state    |
 | -------------   |:-------------:|:-------------:|:-------------:|
@@ -29,10 +29,10 @@ The following 5 cities are available in the dte system:
 
 ### 2) Live-System
 
-Changing from DTE-System to Live-System, with access to the complete Database, is easy:
+Changing from DTE-System to Live-System, with access to the complete database, is easy:
 
-* Delete the `dte` in URL: www.proptechapi.de/dte/macrolage/json... => www.proptechapi.de/macrolage/json
-* Update to your personal PTT-Credentials:
+* Delete the `dte` in URL: www.proptechapi.de/dte/macrolage/json... => www.proptechapi.de/macrolage/json...
+* Update to your personal PTT-credentials:
     * apiKey (your private api key)
     * name (your username for the PTT API)
 
