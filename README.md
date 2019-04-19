@@ -1,13 +1,13 @@
-# PTT-API-Solutions
-End user manual for using the ptt api solutions
+# PTT API-Solutions
+End user manual for using the PTT API-Solutions
 
-The "Macrolage" module enables the creation of a meaningful macro position description including all relevant and current economic and statistical key figures.
+The "Macrolage" module enables the processing request of a meaningful macro location description including all relevant and current economic and statistical key figures for any desired municipality in Germany.
 
 ## PTT API: Macrolage
 
-### 1) `D`eveloping and `T`sting `E`nvironment (DTE)
+### 1) `D`eveloping and `T`esting `E`nvironment (DTE)
 
-**Attention:** The used user and api-key belong to a test acount and is limited to 5 cities in germany. 
+**Attention:** The user and api-key shown below belong to a test account whose request range is limited to five municipalities only. 
 <br/>
 <br/>
 **Test-User:** test.user@proptechtools.de
@@ -16,7 +16,7 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
 <br/>
 <br/>
 <br/>
-The following 5 cities are available in the DTE-system:
+The following five municipalities are available in the DTE-system:
 
 | community key   | city type | city name |   state    |
 | -------------   |:-------------:|:-------------:|:-------------:|
@@ -41,14 +41,13 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 * apiKey (your private api key)
 * name (your username for the PTT API)
 * requester ( currently not used, set to `customer`)
-* One of the following parameters must be used:
+* One of the following parameters must be passed:
   * address
   * latlng
   * communityKey
 * textlength
   * Possible values: `< short | long >`
 * fazit
-  * `fazit` must be set if the textlength has the value ```long```
   * Possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
 
 ### Web-testing-environment 
@@ -60,9 +59,9 @@ The PTT API examples can also be found on [postman](https://documenter.getpostma
 
 ### Examples
 
-* [GET-Request: Short Textlength with coordinations](examples/001-short_textlength_coordinations.md)
-* [GET-Request: Long Textlength with address](examples/002-long_textlength_address.md)
-* [GET-Request: Long Textlength with community key](examples/003-long_textlength_communitykey.md)
+* [GET-Request: Short Textlength by coordinates](examples/001-short_textlength_coordinations.md)
+* [GET-Request: Long Textlength by address](examples/002-long_textlength_address.md)
+* [GET-Request: Long Textlength by community key](examples/003-long_textlength_communitykey.md)
 
 
 
