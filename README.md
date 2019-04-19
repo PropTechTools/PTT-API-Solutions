@@ -26,7 +26,7 @@ The PTT API can also be tested with this [web testing environment](account.propt
 
 ### Postman examples
 
-The PTT API examples can also be found on [postman](account.proptechtools.de/apitest.php)
+The PTT API examples can also be found on [postman](https://documenter.getpostman.com/view/6572378/S1ETQwDF)
 
 ### Examples
 
