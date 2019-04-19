@@ -7,7 +7,6 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
 
 ### 1) `D`eveloping and `T`sting `E`nvironment (DTE)
 
-<br/>
 **Attention:** The used user and api-key belong to a test acount and is limited to 5 cities in germany. 
 <br/>
 <br/>
@@ -52,12 +51,12 @@ Changing from DTE-System to Live-System, with access to the complete database, i
   * `fazit` must be set if the textlength has the value ```long```
   * Possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
 
-### Web testing environment 
-The PTT API can also be tested with this [web testing environment](https://account.proptechtools.de/apitest.php)
+### Web-testing-environment 
+The PTT API can also be tested with this [web testing environment](https://account.proptechtools.de/apitest.php).
 
 ### Postman examples
 
-The PTT API examples can also be found on [postman](https://documenter.getpostman.com/view/6392593/S1ETRGTx#149be5c6-8885-4ea1-be10-b2650dafe35e)
+The PTT API examples can also be found on [postman](https://documenter.getpostman.com/view/6392593/S1ETRGTx#149be5c6-8885-4ea1-be10-b2650dafe35e).
 
 ### Examples
 
