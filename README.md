@@ -5,11 +5,17 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
 
 ## PTT API: Macrolage
 
-### Web `d`eveloping and `t`sting `e`nvironment (dte)
+###1) `D`eveloping and `T`sting `E`nvironment (DTE)
 
-The PTT API can also be tested with this [web testing environment](https://account.proptechtools.de/apitest.php)
-
-
+<br/>
+**Attention**: The used user and api-key belong to a test acount and is limited to 5 cities in germany. 
+<br/>
+<br/>
+**Test-Apikey**: test.user@proptechtools.de<br>
+**Test-User**: gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU
+<br/>
+<br/>
+<br/>
 The following 5 cities are available in the dte system:
 
 | community key   | city type | city name |   state    |
@@ -20,6 +26,15 @@ The following 5 cities are available in the dte system:
 | 081365001088     | city | Aalen | Baden-Württemberg |
 | 064390001001     | community | Aarbergen | Hessen |
 
+
+###2) Live-System
+
+Changing from DTE-System to Live-System, with access to the complete Database, is easy:
+
+* Delete the `dte` in URL: www.proptechapi.de/dte/macrolage/json... => www.proptechapi.de/macrolage/json
+* Update to your personal PTT-Credentials:
+    * apiKey (your private api key)
+    * name (your username for the PTT API)
 
 ### Mandatory parameters for the GET-Request for accessing the PTT API 
 
@@ -36,9 +51,12 @@ The following 5 cities are available in the dte system:
   * `fazit` must be set if the textlength has the value ```long```
   * Possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
 
+### Web testing environment 
+The PTT API can also be tested with this [web testing environment](https://account.proptechtools.de/apitest.php)
+
 ### Postman examples
 
-The PTT API examples can also be found on [postman](https://documenter.getpostman.com/view/6392593/S1ETRGPZ#c2aa707c-bfaa-4992-93c1-d750b91d914a)
+The PTT API examples can also be found on [postman](https://documenter.getpostman.com/view/6392593/S1ETRGTx#149be5c6-8885-4ea1-be10-b2650dafe35e)
 
 ### Examples
 
