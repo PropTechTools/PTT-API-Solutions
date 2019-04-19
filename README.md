@@ -11,8 +11,9 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
 **Attention:** The used user and api-key belong to a test acount and is limited to 5 cities in germany. 
 <br/>
 <br/>
-**Test-Apikey:** test.user@proptechtools.de<br>
-**Test-User:** gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU
+**Test-User:** test.user@proptechtools.de
+<br/>
+**Test-ApiKey:** gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU
 <br/>
 <br/>
 <br/>
