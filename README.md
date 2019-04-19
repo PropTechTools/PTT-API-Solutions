@@ -5,9 +5,21 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
 
 ## PTT API: Macrolage
 
-### Web testing environment
+### Web `d`eveloping and `te`sting (dte) environment
 
 The PTT API can also be tested with this [web testing environment](account.proptechtools.de/apitest.php)
+
+
+The following 5 cities are available in the dte system:
+
+| community key   | city type | city name |   state    |
+| -------------   |:-------------:|:-------------:|:-------------:|
+| 072355007001     | community | Aach | Rheinland-Pfalz | 
+| 083355001001     | city | Aach | Baden-Württemberg |
+| 053340002002     | city | Aachen | Nordrhein-Westfalen |
+| 081365001088     | city | Aalen | Baden-Württemberg |
+| 064390001001     | community | Aarbergen | Hessen |
+
 
 ### Mandatory parameters for the GET-Request for accessing the PTT API 
 

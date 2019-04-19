@@ -23,13 +23,13 @@ function macrolage_search() {
 	var requester = "Deutsche_Kreditbank_AG"
 	
 	if(koord != ""){
-		URL = "https://www.proptechapi.de/macrolage/json?apiKey="+key+"&name="+usr+"&latlng="+koord+"&requester="+requester+"&textlength="+textlength+"&fazit="+fazit
+		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+key+"&name="+usr+"&latlng="+koord+"&requester="+requester+"&textlength="+textlength+"&fazit="+fazit
 	}
 	if(address != ""){
-		URL = "https://www.proptechapi.de/macrolage/json?apiKey="+key+"&name="+usr+"&address="+address+"&requester="+requester+"&textlength="+textlength+"&fazit="+fazit
+		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+key+"&name="+usr+"&address="+address+"&requester="+requester+"&textlength="+textlength+"&fazit="+fazit
 	}
 	if(gemeindeschluessel != ""){
-		URL = "https://www.proptechapi.de/macrolage/json?apiKey="+key+"&name="+usr+"&communityKey="+gemeindeschluessel+"&requester="+requester+"&textlength="+textlength+"&fazit="+fazit
+		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+key+"&name="+usr+"&communityKey="+gemeindeschluessel+"&requester="+requester+"&textlength="+textlength+"&fazit="+fazit
 	}
 
 
