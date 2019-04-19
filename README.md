@@ -5,7 +5,7 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
 
 ## PTT API: Macrolage
 
-###1) `D`eveloping and `T`sting `E`nvironment (DTE)
+### 1) `D`eveloping and `T`sting `E`nvironment (DTE)
 
 <br/>
 **Attention**: The used user and api-key belong to a test acount and is limited to 5 cities in germany. 
@@ -27,7 +27,7 @@ The following 5 cities are available in the dte system:
 | 064390001001     | community | Aarbergen | Hessen |
 
 
-###2) Live-System
+### 2) Live-System
 
 Changing from DTE-System to Live-System, with access to the complete Database, is easy:
 
