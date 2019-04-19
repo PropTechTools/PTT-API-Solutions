@@ -4,11 +4,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>PropTechApi Test</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<?php
+header("Access-Control-Allow-Origin: *");
+?>
+
+
+<style>
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+
 <script>
 function macrolage_search() {
 	//Credentials
-	var key = "SeNiWHq0YHiLwvNp4pOi9tuil8Vs9c7xMj3MlCyr"
-	var usr = "malte.hupe@proptechtools.de"
+	var key = $('#key').val()
+	var usr = $('#user').val()
 	
 	//Required datainput
 	var gemeindeschluessel = $('#gemeindeschluessel').val()
@@ -20,7 +36,7 @@ function macrolage_search() {
 	var fazit = $('#fazit').val();
 	
 	//Requestername - For billing purposes; 
-	var requester = "Deutsche_Kreditbank_AG"
+	var requester = "customer"
 	
 	if(koord != ""){
 		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+key+"&name="+usr+"&latlng="+koord+"&requester="+requester+"&textlength="+textlength+"&fazit="+fazit
@@ -52,11 +68,81 @@ function macrolage_search() {
 			//$('#text').html("REST call failed: "+ URL);
 
 }
+
+
+
 </script>
 </head>
 
 <body>
-<h2>PropTechApi - Testing Environment</h2>
+<h2>PropTechApi - Developing and Testing Environment (DTE)</h2>
+
+<h3 style="text-decoration: underline;">Anmeldedaten:</h3> 
+Test-Apikey: <input readonly="readonly" type="text" id="user" value="test.user@proptechtools.de" disabled placeholder="">
+Test-User: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU" disabled placeholder="">
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="text-decoration: underline;">Api-Inputparameter:</h3> 
+<h4>abfragbare Testdatensätze:</h4> 
+<table> 
+	<tr> 
+		<th>ID</th> 
+		<th>Gemeindeschlüssel</th> 
+		<th>Gemeindeschluessel</th> 
+		<th>Ort-Art</th> 
+		<th>Ort-Name</th> 
+		<th>Bundesland</th> 
+	</tr>
+
+	<tr> 
+		<td>1</td>
+		<td>072355007001</td> 
+		<td>Gemeinde</td> 
+		<td>Aach</td> 
+		<td>Kiez</td> 
+		<td>Rheinland-Pfalz</td> 
+	</tr> 
+
+	<tr> 
+		<td>2</td>
+		<td>083355001001</td> 
+		<td>Stadt</td> 
+		<td>Aach</td> 
+		<td>Kiez</td> 
+		<td>Baden-Württemberg</td> 
+	</tr> 
+
+	<tr> 
+		<td>3</td>
+		<td>053340002002</td> 
+		<td>Stadt</td> 
+		<td>Aachen</td> 
+		<td>Kiez</td> 
+		<td>Nordrhein-Westfalen</td> 
+	</tr>  
+
+	<tr>
+		<td>4</td> 
+		<td>081365001088</td> 
+		<td>Stadt</td> 
+		<td>Aalen</td> 
+		<td>Kiez</td> 
+		<td>Baden-Württemberg</td> 
+	</tr> 
+
+	<tr> 
+		<td>5</td>
+		<td>064390001001</td> 
+		<td>Gemeinde</td> 
+		<td>Aarbergen</td> 
+		<td>Kiez</td> 
+		<td>Hessen</td> 
+	</tr> 
+</table>
+
 <h4>Gemeindeschlüssel/Adresse/Koordinaten</h4>
 <input type="text" id="gemeindeschluessel" value="" placeholder="Gemeindeschlüssel">
 <input type="text" id="address" value="" placeholder="Adresse">
@@ -78,18 +164,21 @@ function macrolage_search() {
   <option value="maessig">Mäßig</option>
   <option value="schlecht">Schlecht</option>
 </select> 
-<br />
-<br />
+<br>
+<br>
 <button onclick="macrolage_search()">Makrolage abrufen</button>
-<br />
-<br />
-<br />
-<br />
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="text-decoration: underline;">Api-Ausgabe:</h3> 
+<h4>Api-Link:</h4>
+<div id="link"></div>
 <h4>Textausgabe:</h4>
 <div id="text" style="width:800px; height:400px; border-color:#000; border-style:solid; border-width:1px"></div>
 
-<h4>Api-Link:</h4>
-<div id="link"></div>
+
 
 </body>
 </html>
