@@ -1,13 +1,13 @@
 # PTT API-Solutions
 End user manual for using the PTT API-Solutions
 
-The "Macrolage" module enables the processing request of a meaningful macro location description including all relevant and current economic and statistical key figures for any desired municipality in Germany.
+The "Macrolage" module enables the processing request of a meaningful macro location description including all relevant and current economic and statistical key figures for any desired community in Germany.
 
 ## PTT API: Macrolage
 
 ### 1) `D`eveloping and `T`esting `E`nvironment (DTE)
 
-**Attention:** The user and api-key shown below belong to a test account whose request range is limited to five municipalities only. 
+**Attention:** The user and api-key shown below belong to a test account whose request range is limited to five communities only. 
 <br/>
 <br/>
 **Test-User:** test.user@proptechtools.de
@@ -16,7 +16,7 @@ The "Macrolage" module enables the processing request of a meaningful macro loca
 <br/>
 <br/>
 <br/>
-The following five municipalities are available in the DTE-system:
+The following five communities are available in the DTE-system:
 
 | community key   | city type | city name |   state    |
 | -------------   |:-------------:|:-------------:|:-------------:|
