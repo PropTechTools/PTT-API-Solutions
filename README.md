@@ -5,6 +5,10 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
 
 ## PTT API: Macrolage
 
+### Web testing environment
+
+The PTT API can also be tested with this [web testing environment](account.proptechtools.de/apitest.php)
+
 ### Mandatory parameters for the GET-Request for accessing the PTT API 
 
 * apiKey (your private api key)
@@ -20,8 +24,11 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
   * `fazit` must be set if the textlength has the value ```long```
   * Possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
 
+### Postman examples
 
-## Examples
+The PTT API examples can also be found on [postman](account.proptechtools.de/apitest.php)
+
+### Examples
 
 * [GET-Request: Short Textlength with coordinations](examples/001-short_textlength_coordinations.md)
 * [GET-Request: Long Textlength with address](examples/002-long_textlength_address.md)
