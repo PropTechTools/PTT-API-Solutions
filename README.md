@@ -5,9 +5,9 @@ The "Macrolage" module enables the creation of a meaningful macro position descr
 
 ## PTT API: Macrolage
 
-### Web `d`eveloping and `te`sting (dte) environment
+### Web `d`eveloping and `t`sting `e`nvironment (dte)
 
-The PTT API can also be tested with this [web testing environment](account.proptechtools.de/apitest.php)
+The PTT API can also be tested with this [web testing environment](https://account.proptechtools.de/apitest.php)
 
 
 The following 5 cities are available in the dte system:
