@@ -38,7 +38,7 @@ The following 5 cities are available in the dte system:
 
 ### Postman examples
 
-The PTT API examples can also be found on [postman](https://documenter.getpostman.com/view/6572378/S1ETQwDF)
+The PTT API examples can also be found on [postman](https://documenter.getpostman.com/view/6392593/S1ETRGPZ#c2aa707c-bfaa-4992-93c1-d750b91d914a)
 
 ### Examples
 
