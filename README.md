@@ -40,11 +40,11 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 
 * apiKey (your private api key)
 * name (your username for the PTT API)
-* requester ( currently not used, set to `customer`)
+* requester (currently not used, set to `customer`)
 * One of the following parameters must be passed:
-  * address
-  * latlng
-  * communityKey
+  * address (success probability less 100% -> depending on address analysis)
+  * latlng (success probability 100%)
+  * communityKey (success probability 100%)
 * textlength
   * Possible values: `< short | long >`
 * fazit
