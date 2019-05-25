@@ -42,9 +42,9 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 * name (your username for the PTT API)
 * requester (currently not used, set to `customer`)
 * One of the following parameters must be passed:
-  * address (success probability less 100% -> depending on address analysis)
-  * latlng (success probability 100%)
-  * communityKey (success probability 100%)
+  * address <br>(success probability less then 100% -> depending on address analysis)
+  * latlng <br>(success probability 100%)
+  * communityKey <br>(success probability 100%)
 * textlength
   * Possible values: `< short | long >`
 * fazit
