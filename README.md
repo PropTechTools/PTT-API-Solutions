@@ -51,7 +51,7 @@ Changing from DTE-System to Live-System, with access to the complete database, i
   * Possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
 
 ### Web-testing-environment 
-The PTT API can also be tested with this [web testing environment](https://account.proptechtools.de/apitest.php).
+The PTT API can also be tested with this [web testing environment](https://api.proptechtools.de).
 
 ### Postman examples
 
