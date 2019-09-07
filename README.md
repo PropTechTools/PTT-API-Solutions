@@ -3,7 +3,7 @@ End user manual for using the PTT API-Solutions
 
 The "Macrolage" module enables the processing request of a meaningful macro location description including all relevant and current economic and statistical key figures for any desired community in Germany.
 
-## PTT API: Macrolage
+## I) PTT API: Macrolage
 
 ### 1) `D`eveloping and `T`esting `E`nvironment (DTE-System)
 
@@ -61,17 +61,16 @@ The PTT API examples can also be found on [postman](https://documenter.getpostma
 * [GET-Request: Long Textlength by address](examples/002-long_textlength_address.md)
 * [GET-Request: Long Textlength by community key](examples/003-long_textlength_communitykey.md)
 
-## PTT API: Kartenset
+## II) PTT API: Kartenset
 
 ### Mandatory parameters
 
 * apiKey (your private api key)
 * name (your username for the PTT API)
-<br>
 * latlng
 
 ### Optional parameters
- * address (overwrites address analysis based on coordinates with optional address)
+ * address (address analysis based on coordinates is overwritten by optional address)
 
 ## Web-testing-environment 
 The PTT API can also be tested with this [web testing environment](https://api.proptechtools.de).
