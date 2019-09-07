@@ -50,8 +50,6 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 * fazit
   * Possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
 
-### Web-testing-environment 
-The PTT API can also be tested with this [web testing environment](https://api.proptechtools.de).
 
 ### Postman examples
 
@@ -63,5 +61,17 @@ The PTT API examples can also be found on [postman](https://documenter.getpostma
 * [GET-Request: Long Textlength by address](examples/002-long_textlength_address.md)
 * [GET-Request: Long Textlength by community key](examples/003-long_textlength_communitykey.md)
 
+## PTT API: Kartenset
 
+### Mandatory parameters
 
+* apiKey (your private api key)
+* name (your username for the PTT API)
+<br>
+* latlng
+
+### Optional parameters
+ * address (overwrites address analysis based on coordinates with optional address)
+
+## Web-testing-environment 
+The PTT API can also be tested with this [web testing environment](https://api.proptechtools.de).
