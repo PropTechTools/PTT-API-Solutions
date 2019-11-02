@@ -12,8 +12,8 @@ header("Access-Control-Allow-Origin: *");
 function macrolage_search() {
 
     //Credentials
-    var apiKey = "gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU";
-    var user = "test.user@proptechtools.de";
+    var apikey = "gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU";
+    var apiname = "test.user@proptechtools.de";
     	
 	//Required datainput
 	var gemeindeschluessel = $('#macro_gemeindeschluessel').val()
@@ -25,16 +25,16 @@ function macrolage_search() {
 	var fazit = $('#macro_fazit').val();
 	
 	//Requestername - For billing purposes; 
-	var requester = "PropTechTools_GmbH"
+	var apirequester = "PropTechTools_GmbH"
 	
 	if(koord != ""){
-		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apiKey+"&name="+user+"&latlng="+koord+"&requester="+requester+"&textlength="+textlength+"&fazit="+fazit
+		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+"&name="+apiname+"&latlng="+koord+"&requester="+apirequester+"&textlength="+textlength+"&fazit="+fazit
 	}
 	if(address != ""){
-		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apiKey+"&name="+user+"&address="+address+"&requester="+requester+"&textlength="+textlength+"&fazit="+fazit
+		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+"&name="+apiname+"&address="+address+"&requester="+apirequester+"&textlength="+textlength+"&fazit="+fazit
 	}
 	if(gemeindeschluessel != ""){
-		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apiKey+"&name="+user+"&communityKey="+gemeindeschluessel+"&requester="+requester+"&textlength="+textlength+"&fazit="+fazit
+		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+"&name="+apiname+"&communityKey="+gemeindeschluessel+"&requester="+apirequester+"&textlength="+textlength+"&fazit="+fazit
 	}
 
 	console.log(URL)
@@ -61,27 +61,51 @@ function macrolage_search() {
 function kartenset_search() {
 
 	//Credentials
-	var apiKey = "gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU";
-	var user = "test.user@proptechtools.de";
+	var apikey = "gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU";
+	var apiname = "test.user@proptechtools.de";
 	
 	//Obligatory datainput
-	var address = encodeURIComponent($('#kartenset_address').val())
-		
+	var address = encodeURIComponent($('#kartenset_address').val());
+	var kartenset_responsetype = $('#kartenset_responsetype').val();
+	
 	//Optional datainput
 	var koord = $('#kartenset_koord').val().replace(' ','');
 
 	//Requestername - For billing purposes; 
-	var requester = encodeURIComponent("PropTechTools_GmbH")
+	var apirequester = encodeURIComponent("PropTechTools_GmbH");
+
+	console.log(kartenset_responsetype)
 
 	if(koord != ""){
-		URL = "https://www.proptechapi.de/6461766964/kartenset/json?apiKey="+apiKey+"&name="+user+"&requester="+requester+"&latlng="+koord;
+		URL = "https://www.proptechapi.de/dte/kartenset/json?apiKey="+apikey+"&name="+apiname+"&requester="+apirequester+"&latlng="+koord+"&responseType="+kartenset_responsetype;
 	}
 	if(address != ""){
-		URL = "https://www.proptechapi.de/6461766964/kartenset/json?apiKey="+apiKey+"&name="+user+"&requester="+requester+"&latlng="+koord+"&address="+address;
+		URL = "https://www.proptechapi.de/dte/kartenset/json?apiKey="+apikey+"&name="+apiname+"&requester="+apirequester+"&latlng="+koord+"&address="+address+"&responseType="+kartenset_responsetype;
 	}
 
+	if(kartenset_responsetype == "doc"){
+		
+		window.location.href=URL;
+
+	} else if (kartenset_responsetype == "data"){
+		
+		$.getJSON(URL, function(data) {
+        console.log(data.message)
+        if (data.success == true){
+            $('#kartenset_text').html(data.data.html_text);
+            console.log(data.data.html_text);
+            //return;
+        } else {
+            $('#kartenset_text').html(data.message);
+            console.log(data)
+            //return;
+        }
+    })
+	}
+	console.log(URL)
 	$('#kartenset_link').html("<a href="+URL+" target='_blank'>"+URL+"</a>");
-	window.location.href=URL;
+
+	
 	//
 }
 </script>
@@ -96,8 +120,8 @@ function kartenset_search() {
 <h2>PropTechApi - Developing and Testing Environment (DTE)</h2>
 
 <h3 style="text-decoration: underline;">Anmeldedaten:</h3> 
-Test-Apikey: <input readonly="readonly" type="text" id="user" value="test.user@proptechtools.de" disabled placeholder="">
-Test-User: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU" disabled placeholder="">
+Test-User: <input readonly="readonly" type="text" id="user" value="test.user@proptechtools.de" disabled placeholder="">
+Test-Apikey: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU" disabled placeholder="">
 <br>
 <br>
 <h3 style="text-decoration: underline;">Api-Inputparameter:</h3> 
@@ -118,8 +142,8 @@ Test-User: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXB
 		<td>Gemeinde</td> 
 		<td>Aach</td> 
 		<td>Rheinland-Pfalz</td>
-		<td>49.789503,6.590633</td>
-	</tr> 
+		<td>49.789503, 6.590633</td>
+	</tr>  
 
 	<tr> 
 		<td>2</td>
@@ -127,7 +151,7 @@ Test-User: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXB
 		<td>Stadt</td> 
 		<td>Aach</td> 
 		<td>Baden-Württemberg</td> 
-		<td>47.840882,8.859067</td> 
+		<td>47.840882, 8.859067</td> 
 	</tr> 
 
 	<tr> 
@@ -136,7 +160,7 @@ Test-User: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXB
 		<td>Stadt</td> 
 		<td>Aachen</td> 
 		<td>Nordrhein-Westfalen</td> 
-		<td>50.777180,6.093335</td> 
+		<td>50.777180, 6.093335</td> 
 	</tr>  
 
 	<tr>
@@ -145,7 +169,7 @@ Test-User: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXB
 		<td>Stadt</td> 
 		<td>Aalen</td> 
 		<td>Baden-Württemberg</td> 
-		<td>48.837336,10.094682</td> 
+		<td>48.837336, 10.094682</td> 
 	</tr> 
 
 	<tr> 
@@ -154,7 +178,7 @@ Test-User: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXB
 		<td>Gemeinde</td> 
 		<td>Aarbergen</td> 
 		<td>Hessen</td> 
-		<td>50.245978,8.078530</td> 
+		<td>50.245978, 8.078530</td> 
 	</tr> 
 </table>
 <br>
@@ -211,6 +235,11 @@ Test-User: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXB
 	<input type="text" id="kartenset_koord" value="" placeholder="Koordinaten">
 	<div>Adresse (Optional: Ersetzt die auf Basis der Koordinate automatisch analysierte Adresse durch die eingegebene Adresse):</div>
 	<input type="text" id="kartenset_address" value="" placeholder="Adresse">
+	<div>ResponseType (data/doc):</div>
+	<select id="kartenset_responsetype">
+		<option value="data">Data (Rohdaten)</option>
+		<option value="doc">Doc (Word)</option>
+	</select>
 	<br>
 	<br>
 	<button onclick="kartenset_search()">Kartenset abrufen</button>
@@ -220,9 +249,8 @@ Test-User: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXB
 	<div>Api-Link:</div>
 	<div id="kartenset_link"></div>
 
-
 </div>
-<hr>
+<hr style="margin-bottom:30px">
 </body>
 </html>
 
