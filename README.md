@@ -68,8 +68,8 @@ The PTT API examples can also be found on [postman](https://documenter.getpostma
 * apiKey (your private api key)
 * name (your username for the PTT API)
 * latlng 
-* ResponseType `<data | doc>`
-   -> doc: returning a word-document
+* ResponseType `<data | doc>`<br>
+   -> doc: returning a word-document<br>
    -> data: returning map-images base64 decoded
 
 ### Optional parameters
