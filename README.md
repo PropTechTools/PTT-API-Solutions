@@ -18,13 +18,13 @@ The "Macrolage" module enables the processing request of a meaningful macro loca
 <br/>
 The following five communities are available in the DTE-system:
 
-| community key   | city type | city name |   state    |
-| -------------   |:-------------:|:-------------:|:-------------:|
-| 072355007001     | community | Aach | Rheinland-Pfalz | 
-| 083355001001     | city | Aach | Baden-Württemberg |
-| 053340002002     | city | Aachen | Nordrhein-Westfalen |
-| 081365001088     | city | Aalen | Baden-Württemberg |
-| 064390001001     | community | Aarbergen | Hessen |
+| community key   | city type | city name |   state    |   latlng    |
+| -------------   |:-------------:|:-------------:|:-------------:|:-------------:|
+| 072355007001     | community | Aach | Rheinland-Pfalz | 49.789503,6.590633 |
+| 083355001001     | city | Aach | Baden-Württemberg | 47.840882,8.859067 |
+| 053340002002     | city | Aachen | Nordrhein-Westfalen | 50.777180,6.093335 |
+| 081365001088     | city | Aalen | Baden-Württemberg | 48.837336,10.094682 |
+| 064390001001     | community | Aarbergen | Hessen | 50.245978,8.078530 |
 
 
 ### 2) Live-System
