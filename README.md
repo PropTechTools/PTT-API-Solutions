@@ -67,7 +67,8 @@ The PTT API examples can also be found on [postman](https://documenter.getpostma
 
 * apiKey (your private api key)
 * name (your username for the PTT API)
-* latlng
+* latlng 
+* ResponseType `<data | doc>`
 
 ### Optional parameters
  * address (address analysis based on coordinates is overwritten by optional address)
