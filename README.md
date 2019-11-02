@@ -69,6 +69,8 @@ The PTT API examples can also be found on [postman](https://documenter.getpostma
 * name (your username for the PTT API)
 * latlng 
 * ResponseType `<data | doc>`
+   -> doc: returning a word-document
+   -> data: returning map-images base64 decoded
 
 ### Optional parameters
  * address (address analysis based on coordinates is overwritten by optional address)
