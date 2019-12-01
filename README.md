@@ -3,8 +3,6 @@ End user manual for using the PTT API-Solutions
 
 The "Macrolage" module enables the processing request of a meaningful macro location description including all relevant and current economic and statistical key figures for any desired community in Germany.
 
-## I) PTT API: Macrolage
-
 ### 1) `D`eveloping and `T`esting `E`nvironment (DTE-System)
 
 **Attention:** The user and api-key shown below belong to a test account whose request range is limited to five communities only. 
@@ -35,6 +33,12 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 * Update to your personal PTT-credentials:
     * apiKey (your private api key)
     * name (your username for the PTT API)
+
+
+## I) PTT API: Macrolage
+* [PTT-Makro-API](doc/ptt-makro-api.md)
+* [PTT-Mikro-API](doc/ptt-mikro-api.md)
+* [PTT-Kartenset-API](doc/ptt-kartenset-api.md)
 
 ### Mandatory parameters for the GET-Request for accessing the PTT API 
 
