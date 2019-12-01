@@ -36,9 +36,9 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 
 
 ## I) PTT API: Macrolage
-##[PTT-Makro-API](doc/ptt-makro-api.md)
-##[PTT-Mikro-API](doc/ptt-mikro-api.md)
-##[PTT-Kartenset-API](doc/ptt-kartenset-api.md)
+## [PTT-Makro-API](doc/ptt-makro-api.md)
+## [PTT-Mikro-API](doc/ptt-mikro-api.md)
+## [PTT-Kartenset-API](doc/ptt-kartenset-api.md)
 
 ### Mandatory parameters for the GET-Request for accessing the PTT API 
 
