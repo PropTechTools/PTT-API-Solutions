@@ -45,39 +45,9 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 ## [II) PTT-Mikro-API](doc/ptt-mikro-api.md)
 ## [III) PTT-Kartenset-API](doc/ptt-kartenset-api.md)
 
-* One of the following parameters must be passed:
-  * address <br>(success probability less than 100% -> depending on address analysis)
-  * latlng <br>(success probability 100%)
-  * communityKey <br>(success probability 100%)
-* textlength
-  * Possible values: `< short | long >`
-* fazit
-  * Possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
-
-
-### Postman examples
-
-The PTT API examples can also be found on [postman](https://documenter.getpostman.com/view/6392593/S1ETRGTx#149be5c6-8885-4ea1-be10-b2650dafe35e).
-
-### Examples
-
-* [GET-Request: Short Textlength by coordinates](examples/001-short_textlength_coordinations.md)
-* [GET-Request: Long Textlength by address](examples/002-long_textlength_address.md)
-* [GET-Request: Long Textlength by community key](examples/003-long_textlength_communitykey.md)
 
 ## II) PTT API: Kartenset
 
-### Mandatory parameters
-
-* apiKey (your private api key)
-* name (your username for the PTT API)
-* latlng 
-* ResponseType `<data | doc>`<br>
-   -> doc: returning a word-document<br>
-   -> data: returning map-images base64 decoded
-
-### Optional parameters
- * address (address analysis based on coordinates is overwritten by optional address)
 
 ## Web-testing-environment 
 The PTT API can also be tested with this [web testing environment](https://api.proptechtools.de).
