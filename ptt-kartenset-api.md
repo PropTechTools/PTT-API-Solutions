@@ -11,3 +11,6 @@
 
 ### Optional parameters
  * address (address analysis based on coordinates is overwritten by optional address)
+
+### Web-testing-environment 
+The PTT-Kartenset-API can also be tested with this [web testing environment](https://api.proptechtools.de/kartenset-api.php).

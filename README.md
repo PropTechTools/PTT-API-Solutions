@@ -35,7 +35,7 @@ Changing from DTE-System to Live-System, with access to the complete database, i
     * name (your username for the PTT API)
 
 
-### Mandatory parameters for the GET-Request for accessing the PTT API 
+### Mandatory parameters for the GET-Request for accessing every PTT API:
 
 * apiKey (your private api key)
 * name (your username for the PTT API)
@@ -44,9 +44,6 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 ## [I) PTT-Makro-API](ptt-makro-api.md)
 ## [II) PTT-Mikro-API](ptt-mikro-api.md)
 ## [III) PTT-Kartenset-API](ptt-kartenset-api.md)
-
-
-## II) PTT API: Kartenset
 
 
 ## Web-testing-environment 
