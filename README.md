@@ -41,9 +41,9 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 * name (your username for the PTT API)
 * requester (currently not used, set to `customer`)
 
-## [I) PTT-Makro-API](doc/ptt-makro-api.md)
-## [II) PTT-Mikro-API](doc/ptt-mikro-api.md)
-## [III) PTT-Kartenset-API](doc/ptt-kartenset-api.md)
+## [I) PTT-Makro-API](ptt-makro-api.md)
+## [II) PTT-Mikro-API](ptt-mikro-api.md)
+## [III) PTT-Kartenset-API](ptt-kartenset-api.md)
 
 
 ## II) PTT API: Kartenset
