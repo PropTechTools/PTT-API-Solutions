@@ -41,10 +41,10 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 * name (your username for the PTT API)
 * requester (currently not used, set to `customer`)
 
-## [I) PTT-Makro-API](ptt-makro-api.md)
-## [II) PTT-Mikro-API](ptt-mikro-api.md)
-## [III) PTT-Kartenset-API](ptt-kartenset-api.md)
+### [I) PTT-Makro-API](ptt-makro-api.md)
+### [II) PTT-Mikro-API](ptt-mikro-api.md)
+### [III) PTT-Kartenset-API](ptt-kartenset-api.md)
 
 
-## Web-testing-environment 
+### Web-testing-environment 
 The PTT API can also be tested with this [web testing environment](https://api.proptechtools.de).
