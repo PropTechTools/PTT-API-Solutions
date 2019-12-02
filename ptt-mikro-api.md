@@ -3,19 +3,19 @@
 
 ## II) PTT-Mikro-API
 
-### General information:
+### General Information:
 
 * The file `display_input.js` is included to manage the display of userinputfields.
 <br>=> The user will only be able to input the minimum amout of necessary data.
 
 
-### Easy integration:
+### Easy Integration:
 
 * Requesttime around **10 sec**
 * User enters all userdata, all userdata is collected and sent in **one request at the end** of the process.
 
 
-### Advanced integration:
+### Advanced Integration:
 
 * Requesttime is reduced to **2 sec**
 <br>=> Increases usabilty and leads to a more responsive userinterface.
@@ -34,7 +34,7 @@
 * The results of both requests are merged and form a hybridtext. 
 * Updating the userinput and requesting an updated form of the text triggers only request at the end (loadtime 2 sec).
 
-### Useful documents:
+### Useful Documents:
 
 * [micro_api_parameter.xlsx](doc/micro_api_parameter.xlsx)
 <br>=> Overview of all requestable micro-api-parameters and their necessary values.
