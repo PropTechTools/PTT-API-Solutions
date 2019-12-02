@@ -25,7 +25,7 @@
   - request at the beginning:
     * specified by the parameter `auto_analysis = true` 
     * reduced to 3 obligatory parameters `bewertungsobjekt`, `stadtzentrum` and `objektkategorie`
-    * still takes 10 sec to load but is loaded in the background while user is inputing additional userdata
+    * still takes 10 sec to load but is loaded in the background while user is inputting additional userdata
   - request at the end:
     * specified by the parameter `auto_analysis = false` 
     * including all userdata in the query
@@ -40,7 +40,7 @@
 <br>=> Overview of all requestable micro-api-parameters and their necessary values.
 
 * [object_categories.xlsx](doc/object_categories.xlsx)
-<br>=> Overview of all textvariants returned depending on the chosen objectcategeorie and the needed userdata.
+<br>=> Overview of all textvariants returned depending on the chosen objectcategeory and the needed userdata.
 
 
 ### Examples

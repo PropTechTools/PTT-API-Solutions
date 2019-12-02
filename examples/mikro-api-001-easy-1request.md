@@ -19,7 +19,6 @@
 | inneroertliche_lage     | teil |
 | umgebungsbebauung1     | wohnwirtschaftliche_nutzung |
 | bauweise1     | geschlossen |
-| wohnlage_karte     | short |
 | aerztliche_primaerversorgung     | gegeben |
 | aperiodischer_bedarf     | vollstaendig |
 | wohnlage_karte     | gut |
