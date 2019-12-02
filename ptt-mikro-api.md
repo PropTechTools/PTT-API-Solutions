@@ -25,14 +25,14 @@
   - request at the beginning:
     * specified by the parameter `auto_analysis = true` 
     * reduced to 3 obligatory parameters `bewertungsobjekt`, `stadtzentrum` and `objektkategorie`
-    * will still take 10 sec to load, but is loaded in the background while the user is inputing additional userdata
+    * still takes 10 sec to load, but is loaded in the background while the user is inputing additional userdata
   - request at the end:
     * specified by the parameter `auto_analysis = false` 
     * including all user input data in the query
-    * will take 2 sec to load, and only process userinput
+    * takes 2 sec to load, and only processeses userdata
 
 * The results of both requests are merged and form a hybridtext. 
-* Updating the userinput and requesting an updated form of the text triggers only request at the end (loadtime 2 sec).
+* Updating the userdata and requesting an updated form of the text triggers only the seccond request (request at the end [2 sec]).
 
 ### Useful Documents:
 
