@@ -1,30 +1,30 @@
 ## II) PTT-Mikro-API
 
-### General integration:
+### General information:
 
-* The file `< file display_input.js >` is included to manage the display of userinputfields.
-=> The user will only be able to input the minimum amout of necessary data.
+* The file `file display_input.js` is included to manage the display of userinputfields.
+<br>=> The user will only be able to input the minimum amout of necessary data.
 
 
 ### Easy integration:
 
 * Requestertime around **10 sec**.
-* User enters all userdata, all userdata is collected and requested in **one request** when pressing the button `< Mikrolage abrufen >`
+* User enters all userdata, all userdata is collected and requested in **one request** when pressing the button `Mikrolage abrufen`
 
 
 ### Advanced integration:
 
 * Requestertime is reduced to **2 sec**. 
-=> Increases usabilty and leads to a more responsive userinterface.
+<br>=> Increases usabilty and leads to a more responsive userinterface.
 
 
 * Decrease is accomplished by splitting one request at the end (including all user input) into **two requests**:
-- request at the beginning:
-    * specified by the parameter "auto_analysis" `< true >` 
-    * reduced to 3 obligatory parameters `< bewertungsobjekt >`, `< stadtzentrum >` and `< objektkategorie >`
+  - request at the beginning:
+    * specified by the parameter `auto_analysis` `< true >` 
+    * reduced to 3 obligatory parameters `bewertungsobjekt`, `stadtzentrum` and `objektkategorie`
     * will still take 10 sec to load, but is loaded in the background while the user is inputing additional userdata
-- request at the end:
-    * specified by the parameter "auto_analysis" `< false >` 
+  - request at the end:
+    * specified by the parameter `auto_analysis` = `< false >` 
     * including all user input data in the query
     * will take 2 sec to load, and only process userinput
 
