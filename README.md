@@ -47,4 +47,4 @@ Changing from DTE-System to Live-System, with access to the complete database, i
 
 
 ### Web-testing-environment 
-The PTT API can also be tested with this [web testing environment](https://api.proptechtools.de).
+The PTT API can also be tested here: [https://api.proptechtools.de](https://api.proptechtools.de).

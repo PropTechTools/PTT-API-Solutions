@@ -1,4 +1,4 @@
-[back to overview](README.md)
+[<- back to overview](README.md)
 ***
 
 ## II) PTT-Mikro-API
@@ -45,6 +45,3 @@
 
 ### Web-testing-environment 
 The PTT-Makro-API can also be tested here: [https://api.proptechtools.de/mikro-api-easy.php](https://api.proptechtools.de/mikro-api-easy.php).
-
-***
-[back to overview](README.md)
