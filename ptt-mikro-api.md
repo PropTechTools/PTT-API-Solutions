@@ -46,7 +46,7 @@
 ### Examples
 
 * [GET-Request: Easy Integration (1 Request)](examples/mikro-api-001-easy-1request.md)
-* [GET-Request: Advanced Integration (2 Requests)](examples/mikro-api-advanced-2requests.md)
+* [GET-Request: Advanced Integration (2 Requests)](examples/mikro-api-002-advanced-2requests.md)
 
 ### Web-testing-environment 
 The PTT-Makro-API can also be tested here: [https://api.proptechtools.de/mikro-api-easy.php](https://api.proptechtools.de/mikro-api-easy.php).
