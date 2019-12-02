@@ -5,14 +5,14 @@
 
 ### General information:
 
-* The file `file display_input.js` is included to manage the display of userinputfields.
+* The file `display_input.js` is included to manage the display of userinputfields.
 <br>=> The user will only be able to input the minimum amout of necessary data.
 
 
 ### Easy integration:
 
 * Requesttime around **10 sec**
-* User enters all userdata, all userdata is collected and requested in **one request** at the end of the Process.
+* User enters all userdata, all userdata is collected and sent in **one request at the end** of the process.
 
 
 ### Advanced integration:
@@ -21,7 +21,7 @@
 <br>=> Increases usabilty and leads to a more responsive userinterface.
 
 
-* Time saving is accomplished by splitting one request at the end (compare Easy integration) into **two requests**:
+* Time saving is accomplished by splitting **one request at the end** into **two requests**:
   - request at the beginning:
     * specified by the parameter `auto_analysis = true` 
     * reduced to 3 obligatory parameters `bewertungsobjekt`, `stadtzentrum` and `objektkategorie`
@@ -31,13 +31,13 @@
     * including all user input data in the query
     * will take 2 sec to load, and only process userinput
 
-* The results of both requests will be merged and form a hybridtext. 
-* Updating the userinput and requesting an adjusted text will only trigger the request at the end and therefore only take another 2 sec to update the text.
+* The results of both requests are merged and form a hybridtext. 
+* Updating the userinput and requesting an updated form of the text triggers only request at the end (loadtime 2 sec).
 
 ### Useful documents:
 
 * [micro_api_parameter.xlsx](doc/micro_api_parameter.xlsx)
-<br>=> Overview of all requestable micro-api-parameters and there necessary values.
+<br>=> Overview of all requestable micro-api-parameters and their necessary values.
 
 * [object_categories.xlsx](doc/object_categories.xlsx)
 <br>=> Overview of all textvariants returned depending on the chosen objectcategeorie and the needed userinput.

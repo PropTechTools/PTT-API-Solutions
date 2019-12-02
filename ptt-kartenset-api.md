@@ -7,11 +7,11 @@
 
 * latlng 
 * ResponseType `<data | doc>`<br>
-   -> doc: returning a word-document<br>
    -> data: returning map-images base64 decoded
+   -> doc: returning a word-document<br>
 
 ### Optional parameters
- * address (address analysis based on coordinates is overwritten by optional address)
+ * address (automated address analysis based on coordinates is overwritten by optional address)
 
 ### Examples
 

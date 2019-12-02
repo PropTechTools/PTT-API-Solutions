@@ -1,5 +1,5 @@
 # PTT API-Solutions
-End user manual for using the PTT API-Solutions
+End user manual for using the PTT API-Solutions.
 
 The "Macrolage" module enables the processing request of a meaningful macro location description including all relevant and current economic and statistical key figures for any desired community in Germany.
 
@@ -27,7 +27,7 @@ The following five communities are available in the DTE-system:
 
 ### 2) Live-System
 
-Changing from DTE-System to Live-System, with access to the complete database, is easy:
+Changing from DTE-System to Live-System (with access to the complete database) is easy:
 
 * Delete the `dte` in URL: www.proptechapi.de/dte/macrolage/json... => www.proptechapi.de/macrolage/json...
 * Update to your personal PTT-credentials:

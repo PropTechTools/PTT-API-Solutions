@@ -8,12 +8,12 @@
   * latlng <br>(success probability 100%)
   * communityKey <br>(success probability 100%)
 * textlength
-  * Possible values: `< short | long >`
+  * possible values: `< short | long >`
 * fazit
-  * Possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
+  * possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
 
 
-### Postman examples
+### Postman Examples
 
 The PTT-Makro-API examples can also be found on [postman](https://documenter.getpostman.com/view/6392593/S1ETRGTx#149be5c6-8885-4ea1-be10-b2650dafe35e).
 
