@@ -36,7 +36,12 @@
 
 ### Usefull documents:
 
-* [Objectkategorie-overview (1 Request)](doc/objectcategories.xlsx)
+* [micro_api_parameter.xlsx](doc/micro_api_parameter.xlsx)
+<br>=> Overview of all requestable micro-api-parameters and there necessary values.
+
+* [object_categories.xlsx](doc/object_categories.xlsx)
+<br>=> Overview of what userinput is needed depending on the objectcategeorie.
+
 
 ### Examples
 
