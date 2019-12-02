@@ -11,17 +11,17 @@
 
 ### Easy integration:
 
-* Requestertime around **10 sec**
+* Requesttime around **10 sec**
 * User enters all userdata, all userdata is collected and requested in **one request** when pressing the button `Mikrolage abrufen`
 
 
 ### Advanced integration:
 
-* Requestertime is reduced to **2 sec**
+* Requesttime is reduced to **2 sec**
 <br>=> Increases usabilty and leads to a more responsive userinterface.
 
 
-* Time saving is accomplished by splitting one request at the end (including all user input) into **two requests**:
+* Time saving is accomplished by splitting one request at the end (compare Easy integration) into **two requests**:
   - request at the beginning:
     * specified by the parameter `auto_analysis = true` 
     * reduced to 3 obligatory parameters `bewertungsobjekt`, `stadtzentrum` and `objektkategorie`

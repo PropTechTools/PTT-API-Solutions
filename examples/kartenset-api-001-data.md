@@ -2,7 +2,7 @@
 
 **BASE-URL**: https://www.proptechapi.de
 
-**URL** : `/dte/macrolage/json?apiKey=<apikey>&latlng=47.8415313,8.8581662&name=<name>&requester=<customer>&textlength=short`
+**URL** : `/dte/macrolage/json?apiKey=<apikey>&name=<name>&requester=<customer>&latlng=47.8415313,8.8581662&responseType=data`
 
 **Method** : `GET`
 
@@ -11,10 +11,10 @@
 | parameter        | value         
 | ------------- |:-------------:| 
 | apiKey     | `apikey` | 
-| latlng     | 47.8415313,8.8581662 |
 | name     | `name` |
 | requester     | customer |
-| textlength     | short |
+| latlng     | 47.8415313,8.8581662 |
+| responseType     | data |
 
 ## Success Response
 
@@ -28,11 +28,14 @@
     "success": true,
     "message": "",
     "data": {
-        "html_text": "<b>Erläuterungen zur Makrolage: <...> Stand: Februar 2019).",
-        "ueberschrift": "Erläuterungen zur Makrolage",
-        "absatz1": "Der Markt Zusmarshausen  <...> Landeshauptstadt München.",
-        "absatz2": " Zusmarshausen beherbergt  <...> eines Mittelzentrums.",
-        "absatz3": " Zusmarshausen wird  <...> Stand: Februar 2019)."
+        "address":{
+            "ZIP":"65326",
+            "city":"Aarbergen",
+            "number":"2"},
+        "copyright": "OpenStreetMap contributors",
+        "map-city": "<base64 decoded>",
+        "map-details": "<base64 decoded>",
+        "map-overview": "<base64 decoded>"
     }
 }
 ```

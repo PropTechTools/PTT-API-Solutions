@@ -1,4 +1,4 @@
-# GET-Request: Longt textlength with address
+# GET-Request: Long textlength with address
 
 **BASE-URL**: https://www.proptechapi.de
 

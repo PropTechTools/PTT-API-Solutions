@@ -17,8 +17,7 @@
 
 ### Examples
 
-* [GET-Request: Kartenset-Worddocument](examples/kartenset-api-001-doc.md)
-* [GET-Request: Kartenset-Data](examples/kartenset-api-002-data.md)
+* [GET-Request: Kartenset-Worddocument](examples/kartenset-api-001-data.md)
 
 ### Web-testing-environment 
 The PTT-Kartenset-API can also be tested here: [https://api.proptechtools.de/kartenset-api.php](https://api.proptechtools.de/kartenset-api.php).
