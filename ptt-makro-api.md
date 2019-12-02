@@ -18,9 +18,9 @@ The PTT-Makro-API examples can also be found on [postman](https://documenter.get
 
 ### Examples
 
-* [GET-Request: Short Textlength by coordinates](examples/001-short_textlength_coordinations.md)
-* [GET-Request: Long Textlength by address](examples/002-long_textlength_address.md)
-* [GET-Request: Long Textlength by community key](examples/003-long_textlength_communitykey.md)
+* [GET-Request: Short Textlength by coordinates](examples/makro-api-001-short_textlength_coordinations.md)
+* [GET-Request: Long Textlength by address](examples/makro-api-002-long_textlength_address.md)
+* [GET-Request: Long Textlength by community key](examples/makro-api-003-long_textlength_communitykey.md)
 
 ### Web-testing-environment 
-The PTT-Makro-API can also be tested with this [web testing environment](https://api.proptechtools.de/makro-api.php).
+The PTT-Makro-API can also be tested here: [https://api.proptechtools.de/makro-api.php](https://api.proptechtools.de/makro-api.php).
