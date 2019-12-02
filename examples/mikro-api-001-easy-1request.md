@@ -1,8 +1,8 @@
-# GET-Request: Short Textlength with coordinations
+# GET-Request: Mikrolage - Easy Integration (1 Request)
 
 **BASE-URL**: https://www.proptechapi.de
 
-**URL** : `/dte/macrolage/json?apiKey=<apikey>&latlng=47.8415313,8.8581662&name=<name>&requester=<customer>&textlength=short`
+**URL** : `/dte/microlage/json?apiKey=<apikey>&name=<name>&requester=<customer>&textlength=short&bewertungsobjekt=50.771279,6.085676&stadtzentrum=50.775396,6.086234&objektkategorie=1&inneroertliche_lage=teil&umgebungsbebauung1=wohnwirtschaftliche_nutzung&bauweise1=geschlossen&aerztliche_primaerversorgung=gegeben&aperiodischer_bedarf=vollstaendig&wohnlage_karte=gut&wohnlage_anwender=gut&fazit_mikrolage=gut&fazit_verkehrsanbindung=gut`
 
 **Method** : `GET`
 
@@ -11,10 +11,21 @@
 | parameter        | value         
 | ------------- |:-------------:| 
 | apiKey     | `apikey` | 
-| latlng     | 47.8415313,8.8581662 |
 | name     | `name` |
 | requester     | customer |
-| textlength     | short |
+| bewertungsobjekt     | 47.8415313,8.8581662 |
+| stadtzentrum     | 47.8415313,8.8581662 |
+| objektkategorie     | 1 |
+| inneroertliche_lage     | teil |
+| umgebungsbebauung1     | wohnwirtschaftliche_nutzung |
+| bauweise1     | geschlossen |
+| wohnlage_karte     | short |
+| aerztliche_primaerversorgung     | gegeben |
+| aperiodischer_bedarf     | vollstaendig |
+| wohnlage_karte     | gut |
+| wohnlage_anwender     | gut |
+| fazit_verkehrsanbindung     | gut |
+| fazit_mikrolage     | gut |
 
 ## Success Response
 
@@ -28,11 +39,26 @@
     "success": true,
     "message": "",
     "data": {
-        "html_text": "<b>Erläuterungen zur Makrolage: <...> Stand: Februar 2019).",
-        "ueberschrift": "Erläuterungen zur Makrolage",
-        "absatz1": "Der Markt Zusmarshausen  <...> Landeshauptstadt München.",
-        "absatz2": " Zusmarshausen beherbergt  <...> eines Mittelzentrums.",
-        "absatz3": " Zusmarshausen wird  <...> Stand: Februar 2019)."
+        "html_text": "<b>Erläuterungen zur Mikrolage: <...> somit eine <u>gut</u> Verkehrsinfrastruktur vor.",
+        "mikrolage": {
+            "ueberschrift":"Erläuterungen zur Mikrolage",
+            "inneroertliche_lage":"Das Bewertungsobjekt befindet <...> von Aachen.",
+            "umgebungsbebauung":"Die Umgebungsbebauung <...> geschlossener Bauweise aus.",
+            "laermbelastung":"",
+            "versorgungsinfrastruktur":"Als Oberzentrum profitiert Aachen <...> auch die ärztliche Primärversorgung vor Ort gegeben.",
+            "naherholung":"Bedingt durch die Nähe zu einem Gewässer ( <...> im Umfeld der Immobilie.",
+            "parkplatzsituatiion":"",
+            "wohnlage":"Gemäß dem Capital Immobilien Kompass <...> vor Ort entspricht.",
+            "fazit":"Für die vorliegende Nutzung wird die Mikrolage insgesamt als gut beurteilt."
+        },
+        "verkehrsinfrastruktur": {
+            "ueberschrift":"Erläuterungen zur Mikrolage",
+            "individualverkehrsanbindung_allgemein":"Aachen ist über die Bundesstraßen B1 <...> angeschlossen.",
+            "autobahnanschluss":"Die vom Objektstandort ausgehend nächstgelegene Auffahrt zur <...> der Anschlussstelle 'Aachen-Europaplatz'.",
+            "oepnv_lokal":"Sowohl die Bushaltestelle 'Alter Posthof' als auch der u.a. als ICE-Haltestelle <...>  gut erreichbar ist.",
+            "oepnv_ueberregional":"Die Distanz zum internationalen Verkehrsflughafen 'Düsseldorf' <...> rd. 74 km.",
+            "fazit":"Unter Berücksichtigung der genannten Faktoren liegt somit eine gute Verkehrsinfrastruktur vor."
+        }
     }
 }
 ```
