@@ -1,8 +1,8 @@
-# GET-Request: Short Textlength with coordinations
+# GET-Request: Kartenset-Imagedata
 
 **BASE-URL**: https://www.proptechapi.de
 
-**URL** : `/dte/macrolage/json?apiKey=<apikey>&name=<name>&requester=<customer>&latlng=47.8415313,8.8581662&responseType=data`
+**URL** : `/dte/kartenset/json?apiKey=<apikey>&name=<name>&requester=<customer>&latlng=47.8415313,8.8581662&responseType=data`
 
 **Method** : `GET`
 

@@ -5,8 +5,6 @@
 
 ### Mandatory parameters
 
-* apiKey (your private api key)
-* name (your username for the PTT API)
 * latlng 
 * ResponseType `<data | doc>`<br>
    -> doc: returning a word-document<br>

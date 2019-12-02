@@ -36,12 +36,12 @@
 
 ### Usefull documents:
 
+* [Objectkategorie-overview (1 Request)](doc/objectcategories.xlsx)
 
 ### Examples
 
-* [GET-Request: Short Textlength by coordinates](examples/mikro-api-001-short_textlength_coordinations.md)
-* [GET-Request: Long Textlength by address](examples/mikro-api-002-long_textlength_address.md)
-* [GET-Request: Long Textlength by community key](examples/mikro-api-003-long_textlength_communitykey.md)
+* [GET-Request: Easy Integration (1 Request)](examples/mikro-api-001-easy-1request.md)
+* [GET-Request: Advanced Integration (2 Requests)](examples/mikro-api-advanced-2requests.md)
 
 ### Web-testing-environment 
 The PTT-Makro-API can also be tested here: [https://api.proptechtools.de/mikro-api-easy.php](https://api.proptechtools.de/mikro-api-easy.php).
