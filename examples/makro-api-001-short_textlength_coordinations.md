@@ -1,6 +1,3 @@
-[<- back to makrolage-api](ptt-makro-api.md)
-*** 
-
 # GET-Request: Short Textlength with coordinations
 
 **BASE-URL**: https://www.proptechapi.de
