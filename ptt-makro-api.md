@@ -17,7 +17,7 @@
 
 Wirtschaftsstruktur is automaticly analised in communitys with a population larger then 15.000, but can be overwritten by requesting own parameters: 
 * wirtschaftsstruktur1/wirtschaftsstruktur2/wirtschaftsstruktur3
-  * possible values: `< sehr_gut | gut | mittel | maessig | schlecht >`
+  * possible values: [wirtschaftsstruktur_parameters.xlsx](docs/wirtschaftsstruktur_parameter.xlsx).
 
 ### Postman Examples
 
