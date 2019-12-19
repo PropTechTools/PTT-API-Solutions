@@ -3,15 +3,21 @@
 
 ## I) PTT-Makro-API
 
+### Obligatory parameters:
 * One of the following parameters must be passed:
   * address <br>(success probability less than 100% -> depending on address analysis)
   * latlng <br>(success probability 100%)
   * communityKey <br>(success probability 100%)
 * textlength
   * possible values: `< short | long >`
-* fazit
-  * possible values: `< sehr_gut | gut | durchschnittlich | maessig | schlecht >`
 
+### Optional parameters:
+* fazit
+  * possible values: `< sehr_gut | gut | mittel | maessig | schlecht >`
+
+Wirtschaftsstruktur is automaticly analised in communitys with a population larger then 15.000, but can be overwritten by requesting own parameters: 
+* wirtschaftsstruktur1/wirtschaftsstruktur2/wirtschaftsstruktur3
+  * possible values: `< sehr_gut | gut | mittel | maessig | schlecht >`
 
 ### Postman Examples
 

@@ -3,8 +3,7 @@
 
 ## III) PTT-Kartenset-API
 
-### Mandatory parameters
-
+### Obligatory parameters
 * latlng 
 * ResponseType `<data | doc>`<br>
    -> data: returning map-images base64 decoded

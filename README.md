@@ -35,7 +35,7 @@ Changing from DTE-System to Live-System (with access to the complete database) i
     * name (your username for the PTT API)
 
 
-### Mandatory parameters for the GET-Request for accessing every PTT API:
+### Obligatory parameters for the GET-Request for accessing every PTT API:
 
 * apiKey (your private api key)
 * name (your username for the PTT API)
@@ -48,3 +48,6 @@ Changing from DTE-System to Live-System (with access to the complete database) i
 
 ### Web-testing-environment 
 The PTT API can also be tested here: [https://api.proptechtools.de](https://api.proptechtools.de).
+
+### Changelog
+Changelog of API-Updates: [https://api.proptechtools.de](ptt-changelog.md).
