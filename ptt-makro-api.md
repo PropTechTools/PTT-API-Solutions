@@ -15,9 +15,9 @@
 * fazit
   * possible values: `< sehr_gut | gut | mittel | maessig | schlecht >`
 
-Wirtschaftsstruktur is automaticly analised in communitys with a population larger then 15.000, but can be overwritten by requesting own parameters: 
+Wirtschaftsstruktur is automatically analysed in communitys with a population larger then 15.000, but can be overwritten by requesting the following parameters: 
 * wirtschaftsstruktur1/wirtschaftsstruktur2/wirtschaftsstruktur3
-  * possible values: [wirtschaftsstruktur_parameters.xlsx](docs/wirtschaftsstruktur_parameter.xlsx).
+  * possible values: [wirtschaftsstruktur_parameters.xlsx](doc/wirtschaftsstruktur_parameter.xlsx).
 
 ### Postman Examples
 
