@@ -50,4 +50,4 @@ Changing from DTE-System to Live-System (with access to the complete database) i
 The PTT API can also be tested here: [https://api.proptechtools.de](https://api.proptechtools.de).
 
 ### Changelog
-Changelog of API-Updates: [https://api.proptechtools.de](ptt-changelog.md).
+[Cahngelog](ptt-changelog.md) of API-Updates
