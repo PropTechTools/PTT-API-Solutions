@@ -200,19 +200,21 @@ Test-Apikey: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsbo
 
 <br><br>
 
-<div>Wirtschaftsstruktur:</div>
-<a href="https://github.com/PropTechTools/PTT-API-Solutions/blob/master/doc/wirtschaftsstruktur_parameter.xlsx" target="_blank" style="color:#ff9800">wirtschaftsstruktur_parameter.xlsx</a>
+<div id="wirtschaftsstruktur_div">
+	<div>Wirtschaftsstruktur:</div>
+	<a href="https://github.com/PropTechTools/PTT-API-Solutions/blob/master/doc/wirtschaftsstruktur_parameter.xlsx" target="_blank" style="color:#ff9800">wirtschaftsstruktur_parameter.xlsx</a>
 
-<br><br>
+	<br><br>
 
-<select id="wirtschaftsstruktur1"></select>
-<br>
+	<select id="wirtschaftsstruktur1"></select>
+	<br>
 
-<select id="wirtschaftsstruktur2" style="display:none"></select>
-<br>
+	<select id="wirtschaftsstruktur2" style="display:none"></select>
+	<br>
 
-<select id="wirtschaftsstruktur3" style="display:none"></select>
-<br><br>
+	<select id="wirtschaftsstruktur3" style="display:none"></select>
+	<br><br>
+</div>
 
 <button onclick="macrolage_search()">Makrolage abrufen</button>
 

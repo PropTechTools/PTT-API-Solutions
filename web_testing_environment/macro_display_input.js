@@ -57,4 +57,12 @@ jQuery(document).ready(function(){
     ];
 
     dynamicDropdown(wirtschaftsstruktur,"wirtschaftsstruktur1","wirtschaftsstruktur2","wirtschaftsstruktur3","");
+    
+    $( "#macro_textlength" ).change(function() {
+        if (this.value == "short"){
+            $("#wirtschaftsstruktur_div").hide();
+        } else {
+            $("#wirtschaftsstruktur_div").show();
+        }
+    });
 });
