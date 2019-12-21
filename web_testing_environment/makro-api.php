@@ -3,6 +3,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>PropTechApi Test</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="dynamic_dropdown.js"></script>
+<script src="macro_display_input.js"></script>
 <?php
 header("Access-Control-Allow-Origin: *");
 ?>
@@ -15,26 +17,57 @@ function macrolage_search() {
     var apikey = "gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU";
     var apiname = "test.user@proptechtools.de";
     	
-	//Required datainput
+	//Obligatory parameters
 	var gemeindeschluessel = $('#macro_gemeindeschluessel').val()
 	var address = encodeURIComponent($('#macro_address').val())
 	var koord = $('#macro_koord').val()
 
 
 	var textlength = $('#macro_textlength').val()
+
+	//Optional parameters
 	var fazit = $('#macro_fazit').val();
+	var wirtschaftsstruktur1 = $('#wirtschaftsstruktur1').val();
+	var wirtschaftsstruktur2 = $('#wirtschaftsstruktur2').val();
+	var wirtschaftsstruktur3 = $('#wirtschaftsstruktur3').val();
 	
+
+	console.log(wirtschaftsstruktur1+wirtschaftsstruktur2+wirtschaftsstruktur3)
 	//Requestername - For billing purposes; 
 	var apirequester = "PropTechTools_GmbH"
 	
 	if(koord != ""){
-		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+"&name="+apiname+"&latlng="+koord+"&requester="+apirequester+"&textlength="+textlength+"&fazit="+fazit
+		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+
+		"&name="+apiname+
+		"&latlng="+koord+
+		"&requester="+apirequester+
+		"&textlength="+textlength+
+		"&fazit="+fazit+
+		"&wirtschaftsstruktur1="+wirtschaftsstruktur1+
+		"&wirtschaftsstruktur2="+wirtschaftsstruktur2+
+		"&wirtschaftsstruktur3="+wirtschaftsstruktur3
 	}
 	if(address != ""){
-		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+"&name="+apiname+"&address="+address+"&requester="+apirequester+"&textlength="+textlength+"&fazit="+fazit
+		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+
+		"&name="+apiname+
+		"&address="+address+
+		"&requester="+apirequester+
+		"&textlength="+textlength+
+		"&fazit="+fazit+
+		"&wirtschaftsstruktur1="+wirtschaftsstruktur1+
+		"&wirtschaftsstruktur2="+wirtschaftsstruktur2+
+		"&wirtschaftsstruktur3="+wirtschaftsstruktur3
 	}
 	if(gemeindeschluessel != ""){
-		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+"&name="+apiname+"&communityKey="+gemeindeschluessel+"&requester="+apirequester+"&textlength="+textlength+"&fazit="+fazit
+		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+
+		"&name="+apiname+
+		"&communityKey="+gemeindeschluessel+
+		"&requester="+apirequester+
+		"&textlength="+textlength+
+		"&fazit="+fazit+
+		"&wirtschaftsstruktur1="+wirtschaftsstruktur1+
+		"&wirtschaftsstruktur2="+wirtschaftsstruktur2+
+		"&wirtschaftsstruktur3="+wirtschaftsstruktur3
 	}
 
 	console.log(URL)
@@ -66,7 +99,7 @@ function macrolage_search() {
 <div style="height:20px"></div>
 <a href="makro-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px">Makrolage-API</a>
 <a href="mikro-api-easy.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Mikrolage-API[Easy]</a>
-<a href="mikro-api-advanced.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Mikrolage-API[Advanced]</a>
+<!--<a href="mikro-api-advanced.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Mikrolage-API[Advanced]</a>-->
 <a href="kartenset-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Kartenset-API</a>
 <hr style="margin-top: 10px;">
 
@@ -138,46 +171,61 @@ Test-Apikey: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsbo
 <hr>
 
 <h2 >Makrolage-API</h2>
-<div id="macro_api">
-	
-	<div>Gemeindeschlüssel/Adresse/Koordinaten</div>
-		<input type="text" id="macro_gemeindeschluessel" value="" placeholder="Gemeindeschlüssel">
-		<input type="text" id="macro_address" value="" placeholder="Adresse">
-		<input type="text" id="macro_koord" value="" placeholder="Koordinaten">
-	<br />
 
-	<div>Textlänge</div>
-	<select id="macro_textlength">
-		<option value="long">long</option>
-		<option value="short">short</option>
-	</select> 
-	<br />
+<h4>Obligatorischer Parameter:</h4>
 
-	<div>Fazit</div>
-	<select id="macro_fazit">
-		<option value="sehr_gut">Sehr gut</option>
-		<option value="gut">Gut</option>
-		<option value="durchschnittlich">Durchschnittlich</option>
-		<option value="maessig">Mäßig</option>
-		<option value="schlecht">Schlecht</option>
-	</select> 
-	<br>
-	<br>
-	<button onclick="macrolage_search()">Makrolage abrufen</button>
-	<br>
-	<br>
-	<br>
-	<br>
+<div>Gemeindeschlüssel/Adresse/Koordinaten (Single Choice):</div>
+	<input type="text" id="macro_gemeindeschluessel" value="" placeholder="Gemeindeschlüssel">
+	<input type="text" id="macro_address" value="" placeholder="Adresse">
+	<input type="text" id="macro_koord" value="" placeholder="Koordinaten">
+<br />
 
-	<h3 style="text-decoration: underline;">Api-Ausgabe:</h3> 
-	<div>Api-Link:</div>
-	<div id="macro_link"></div>
-	<div>Textausgabe:</div>
-	<div id="macro_text" style="width:800px; min-height:80px; border-color:#000; border-style:solid; border-width:1px, height:auto"></div>
+<div>Textlänge:</div>
+<select id="macro_textlength">
+	<option value="long">long</option>
+	<option value="short">short</option>
+</select> 
 
-	<br>
+<br><br>
 
-</div>
+<h4>Optionale Parameter:</h4>
+<div>Fazit:</div>
+<select id="macro_fazit">
+	<option value="sehr_gut">Sehr gut</option>
+	<option value="gut">Gut</option>
+	<option value="mittel">Mittel</option>
+	<option value="maessig">Mäßig</option>
+	<option value="schlecht">Schlecht</option>
+</select> 
+
+<br><br>
+
+<div>Wirtschaftsstruktur:</div>
+<a href="https://github.com/PropTechTools/PTT-API-Solutions/blob/master/doc/wirtschaftsstruktur_parameter.xlsx" target="_blank" style="color:#ff9800">wirtschaftsstruktur_parameter.xlsx</a>
+
+<br><br>
+
+<select id="wirtschaftsstruktur1"></select>
+<br>
+
+<select id="wirtschaftsstruktur2" style="display:none"></select>
+<br>
+
+<select id="wirtschaftsstruktur3" style="display:none"></select>
+<br><br>
+
+<button onclick="macrolage_search()">Makrolage abrufen</button>
+
+<br><br><br>
+
+<h3 style="text-decoration: underline;">Api-Ausgabe:</h3> 
+<div>Api-Link:</div>
+<div id="macro_link"></div>
+<div>Textausgabe:</div>
+<div id="macro_text" style="width:800px; min-height:80px; border-color:#000; border-style:solid; border-width:1px, height:auto"></div>
+
+<br>
+
 <hr style="margin-bottom:30px">
 </body>
 </html>
