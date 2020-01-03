@@ -24,15 +24,23 @@
 * Time saving is accomplished by splitting **one request at the end** into **two requests**:
   - request at the beginning:
     * specified by the parameter `auto_analysis = true` 
-    * reduced to 3 obligatory parameters `bewertungsobjekt`, `stadtzentrum` and `objektkategorie`
+    * reduced to parameter `bewertungsobjekt` and koordinats/mapbased parameters `objektkategorie`, `stadtzentrum`, `aerztliche_primaerversorgung_ort_koordinate` and `aperiodischer_bedarf_ort_koordinate`.
     * still takes 10 sec to load but is loaded in the background while user is inputting additional userdata
   - request at the end:
-    * specified by the parameter `auto_analysis = false` 
     * including all userdata in the query
     * takes 2 sec to load and only processeses userdata
 
 * The results of both requests are merged and form a hybridtext. 
 * Updating the userdata and requesting an updated form of the text triggers only the seccond request (request at the end [2 sec]).
+
+### Optional api settings parameters:
+* auto_analysis
+  * see advanced integration for more information
+  * possible values: `< "true" | "false" | "">`
+
+* data
+  * returns row data to visualise points of interests on which the text is based
+  * possible values: `< "true" | "false" | "">`
 
 ### Useful Documents:
 
