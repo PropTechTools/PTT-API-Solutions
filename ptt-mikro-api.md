@@ -7,7 +7,7 @@
 
 * The file `display_input.js` is included to manage the display of userinputfields.
 <br>=> The user will only be able to input the minimum amout of necessary data.
-* There are two ways to integrate the Mikro-API, an [Easy Integration](#easy) and an [Advanced Integration](#adv).
+* There are two ways to integrate the Mikro-API, an [a) Easy Integration](#easy) and an [b) Advanced Integration](#adv).
 
 ### <a name="easy"></a>a) Easy Integration:
 
@@ -24,7 +24,7 @@
 * Time saving is accomplished by splitting **one request at the end** into **two requests**:
   - request at the beginning:
     * specified by the parameter `auto_analysis = true` 
-    * reduced to parameter `bewertungsobjekt` and koordinats/mapbased parameters `objektkategorie`, `stadtzentrum`, `aerztliche_primaerversorgung_ort_koordinate` and `aperiodischer_bedarf_ort_koordinate`.
+    * reduced to parameter `objektkategorie` and koordinats/mapbased parameters `bewertungsobjekt`, `stadtzentrum`, `aerztliche_primaerversorgung_ort_koordinate` and `aperiodischer_bedarf_ort_koordinate`.
     * still takes 10 sec to load but is loaded in the background while user is inputting additional userdata
   - request at the end:
     * including all userdata in the query
@@ -35,7 +35,7 @@
 
 ### Optional api settings parameters:
 * auto_analysis
-  * see [Advanced Integration](#adv) for more information
+  * see [b) Advanced Integration](#adv) for more information
   * possible values: `< "true" | "false" | "">`
 
 * data
