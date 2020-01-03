@@ -39,7 +39,7 @@
   * possible values: `< "true" | "false" | "">`
 
 * data
-  * returns row data to visualise points of interests on which the text is based
+  * returns row data to visualise points of interests on which the text is based on
   * possible values: `< "true" | "false" | "">`
 
 ### Useful Documents:
