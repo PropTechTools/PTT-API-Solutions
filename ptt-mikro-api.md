@@ -7,7 +7,7 @@
 
 * The file `display_input.js` is included to manage the display of userinputfields.
 <br>=> The user will only be able to input the minimum amout of necessary data.
-* There are two ways to integrate the Mikro-API, an [a) Easy Integration](#easy) and an [b) Advanced Integration](#adv).
+* There are two ways to integrate the Mikro-API, [a) Easy Integration](#easy) and [b) Advanced Integration](#adv).
 
 ### <a name="easy"></a>a) Easy Integration:
 
