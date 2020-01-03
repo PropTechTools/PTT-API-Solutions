@@ -7,15 +7,15 @@
 
 * The file `display_input.js` is included to manage the display of userinputfields.
 <br>=> The user will only be able to input the minimum amout of necessary data.
+* There are two ways to integrate the Mikro-API, an [Easy Integration](#easy) and an [Advanced Integration](#adv).
 
-
-### Easy Integration:
+### <a name="easy"></a>a) Easy Integration:
 
 * Requesttime around **10 sec**
 * User enters all userdata, all userdata is collected and sent in **one request at the end** of the process.
 
 
-### Advanced Integration:
+### <a name="adv"></a>b) Advanced Integration:
 
 * Requesttime is reduced to **2 sec**
 <br>=> Increases usabilty and leads to a more responsive userinterface.
@@ -35,7 +35,7 @@
 
 ### Optional api settings parameters:
 * auto_analysis
-  * see advanced integration for more information
+  * see [Advanced Integration](#adv) for more information
   * possible values: `< "true" | "false" | "">`
 
 * data
@@ -57,4 +57,4 @@
 * [GET-Request: Advanced Integration (2 Requests)](examples/mikro-api-002-advanced-2requests.md)
 
 ### Web-testing-environment 
-The PTT-Makro-API can also be tested here: [https://api.proptechtools.de/mikro-api-easy.php](https://api.proptechtools.de/mikro-api-easy.php).
+The PTT-Mikro-API can also be tested here: [https://api.proptechtools.de/mikro-api-easy.php](https://api.proptechtools.de/mikro-api-easy.php).
