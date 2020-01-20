@@ -39,7 +39,7 @@ Changing from DTE-System to Live-System (with access to the complete database) i
 
 * apiKey (your private api key)
 * name (your username for the PTT API)
-* requester (currently not used, set to `customer`)
+* requester (as an option you can specify between individuel api-requests all using the same `apiKey` and `name` for comprehensibility and billing purposes, if not nessesary set to `customer` or leave empty)
 
 ### [I) PTT-Makro-API](ptt-makro-api.md)
 ### [II) PTT-Mikro-API](ptt-mikro-api.md)
