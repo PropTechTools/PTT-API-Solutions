@@ -9,3 +9,4 @@
 * 2020-01-03 [v0.0.2.7] Mikrolage-API: Changing advanced integrationparameters -> [updated Mikrolage-API manuel](ptt-mikro-api.md)
 * 2020-01-03 [v0.0.2.7] Update obligatory parameters in micro_api_parameter.xlsx
 * 2020-01-17 [v0.0.3.0] Bugfixes and automated backend bug analysis
+* 2020-01-20 [v0.0.3.2] Adding explanation to [request](README.md)-Parameter
