@@ -50,7 +50,7 @@
 | auto_analysis     | false |
 
 
-## Success Response 1 (auto_analysis = true) [10 sec]
+## Success Response 1 (auto_analysis = true) [6 sec]
 
 **Code** : `200 OK`
 
@@ -86,7 +86,7 @@
 }
 ```
 
-## Success Response 2 (auto_analysis = false) [2 sec]
+## Success Response 2 (auto_analysis = false) [1,2 sec]
 
 **Code** : `200 OK`
 
