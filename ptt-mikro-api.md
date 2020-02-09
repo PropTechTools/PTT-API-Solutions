@@ -11,13 +11,13 @@
 
 ### <a name="easy"></a>a) Easy Integration:
 
-* Requesttime around **10 sec**
+* Requesttime around **6 sec**
 * User enters all userdata, all userdata is collected and sent in **one request at the end** of the process.
 
 
 ### <a name="adv"></a>b) Advanced Integration:
 
-* Requesttime is reduced to **2 sec**
+* Requesttime is reduced to **1,2 sec**
 <br>=> Increases usabilty and leads to a more responsive userinterface.
 
 
@@ -25,13 +25,13 @@
   - request at the beginning:
     * specified by the parameter `auto_analysis = true` 
     * reduced to parameter `objektkategorie` and koordinats/mapbased parameters `bewertungsobjekt`, `stadtzentrum`, `aerztliche_primaerversorgung_ort_koordinate` and `aperiodischer_bedarf_ort_koordinate`.
-    * still takes 10 sec to load but is loaded in the background while user is inputting additional userdata
+    * still takes 6 sec to load but is loaded in the background while user is inputting additional userdata
   - request at the end:
     * including all userdata in the query
-    * takes 2 sec to load and only processeses userdata
+    * takes 1,2 sec to load and only processeses userdata
 
 * The results of both requests are merged and form a hybridtext. 
-* Updating the userdata and requesting an updated form of the text triggers only the seccond request (request at the end [2 sec]).
+* Updating the userdata and requesting an updated form of the text triggers only the seccond request (request at the end [1,2 sec]).
 
 ### Optional api settings parameters:
 * auto_analysis
