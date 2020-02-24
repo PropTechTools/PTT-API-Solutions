@@ -13,3 +13,4 @@
 * 2020-02-09 [v0.0.4.1] Upgrading serverinfrastructur resulting in quicker requesttimes -> [updated requesttimes](ptt-mikro-api.md)
 * 2020-02-23 [v0.0.4.1] Fix special character (ß to ss) in -> [micro_api_parameter.xlsx](doc/micro_api_parameter.xlsx)
 * 2020-02-23 [v0.0.4.4] Fix parameterspelling (gastronomiebtrieb to gastronomiebterieb) in -> [micro_api_parameter.xlsx](doc/micro_api_parameter.xlsx)
+* 2020-02-24 [v0.0.4.4] Changing stadtteilzentrum_check to stadtteilzentrum_naehe (both params will work) in [micro_api_parameter.xlsx](doc/micro_api_parameter.xlsx)
