@@ -69,7 +69,7 @@
             "umgebungsbebauung":"",
             "laermbelastung":"",
             "versorgungsinfrastruktur":"Als Oberzentrum profitiert Aachen <...> auch die ärztliche Primärversorgung vor Ort gegeben.",
-            "naherholung":"",
+            "naherholungsmoeglichkeiten":"",
             "parkplatzsituatiion":"",
             "wohnlage":"",
             "fazit":""
@@ -105,7 +105,7 @@
             "umgebungsbebauung":"Die Umgebungsbebauung <...> geschlossener Bauweise aus.",
             "laermbelastung":"",
             "versorgungsinfrastruktur":"Als Oberzentrum profitiert Aachen <...> auch die ärztliche Primärversorgung vor Ort gegeben.",
-            "naherholung":"Bedingt durch die Nähe zu einem Gewässer ( <...> im Umfeld der Immobilie.",
+            "naherholungsmoeglichkeiten":"Bedingt durch die Nähe zu einem Gewässer ( <...> im Umfeld der Immobilie.",
             "parkplatzsituatiion":"",
             "wohnlage":"Gemäß dem Capital Immobilien Kompass <...> vor Ort entspricht.",
             "fazit":"Für die vorliegende Nutzung wird die Mikrolage insgesamt als gut beurteilt."
