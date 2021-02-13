@@ -12,7 +12,6 @@
 ### Optional settings parameters
 
  * address (automated address analysis based on coordinates is overwritten by optional address)
-   
  * border `<true | false>` (displays border of local community)
  * compass `<true | false>` (displays compass, if `ResponseType=data` (Base64-Format): seperate image)
  * scale `<true | false>` (displays scale, if `ResponseType=data` (Base64-Format): seperate image)
