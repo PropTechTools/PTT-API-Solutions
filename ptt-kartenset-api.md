@@ -12,9 +12,9 @@
 ### Optional settings parameters
 
  * address (automated address analysis based on coordinates is overwritten by optional address)
- * border `<true | false>` (displays border of local community)
- * compass `<true | false>` (displays compass, if `ResponseType=data` (Base64-Format): seperate image)
- * scale `<true | false>` (displays scale, if `ResponseType=data` (Base64-Format): seperate image)
+ * border `<"true" | "false" | "">` (displays border of local community)
+ * compass `"<true" | "false" | "">` (displays compass)
+ * scale `<"true" | "false" | "">` (displays scale)
  
 **Attention:** If `compass=true` and `scale=true` are used in compination with `ResponseType=data` (Base64-Format) the api will return one seperate base64 decoded compass image and three scale images. The returned map images (map-overview, map-city, map-details) must be kept at response resolution (600x720) otherwise the scale does not fit the map.
 
