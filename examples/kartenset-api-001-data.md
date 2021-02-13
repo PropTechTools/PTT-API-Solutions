@@ -43,8 +43,7 @@
         "scale": {
             "map-overview": "<base64 decoded>",
             "map-city": "<base64 decoded>",
-            "map-details": "<base64 decoded>"
-        },
+            "map-details": "<base64 decoded>"}
     }
 }
 ```
