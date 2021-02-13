@@ -6,11 +6,32 @@
 ### Obligatory parameters
 * latlng 
 * ResponseType `<data | doc>`<br>
-   -> data: returning map-images base64 decoded
+   -> data: returning map-images base64 decoded <br>
    -> doc: returning a word-document<br>
 
 ### Optional parameters
+
  * address (automated address analysis based on coordinates is overwritten by optional address)
+ 
+  <br>
+  
+ * supermarkt `<[lat,lng],[lat,lng]...>` (displays supermarkt on map)
+ * restaurant `<[lat,lng],[lat,lng]...>` (displays restaurant on map)
+ * einkaufszentrum `<[lat,lng],[lat,lng]...>` (displays einkaufszentrum on map)
+ * autobahnanschluss `<[lat,lng],[lat,lng]...>` (displays autobahnanschluss on map)
+ * bushaltestelle `<[lat,lng],[lat,lng]...>` (displays bushaltestelle on map)
+ * bahnhof `<[lat,lng],[lat,lng]...>` (displays bahnhof on map)
+ * flughafen `<[lat,lng],[lat,lng]...>` (displays flughafen on map)
+ 
+ <br>
+ 
+ * border `<true | false>` (displays border of local community)
+ * compass `<true | false>` (displays compass, if `ResponseType=data` (Base64-Format): seperate image)
+ * scale `<true | false>` (displays scale, if `ResponseType=data` (Base64-Format): seperate image)
+ 
+ 
+
+**Attention:** If `compass=true` and `scale=true` are used in compination with `ResponseType=data` (Base64-Format) the api will return one seperate base64 decoded compass image and three scale images. The returned map images (map-overview, map-city, map-details) must be kept at response resolution (600x720) otherwise the scale does not fit the map.
 
 ### Examples
 
