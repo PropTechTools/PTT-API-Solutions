@@ -15,6 +15,9 @@
 | requester     | customer |
 | latlng     | 47.8415313,8.8581662 |
 | responseType     | data |
+| compass     | true |
+| scale     | true |
+| border     | true |
 
 ## Success Response
 
@@ -33,9 +36,15 @@
             "city":"Aarbergen",
             "number":"2"},
         "copyright": "OpenStreetMap contributors",
+        "map-overview": "<base64 decoded>"
         "map-city": "<base64 decoded>",
         "map-details": "<base64 decoded>",
-        "map-overview": "<base64 decoded>"
+        "compass": "<base64 decoded>"
+        "scale": {
+            "map-overview": "<base64 decoded>"
+            "map-city": "<base64 decoded>"
+            "map-details": "<base64 decoded>"
+        },
     }
 }
 ```
