@@ -16,7 +16,7 @@
  * compass: `<true | false | "">` (displays compass)
  * scale: `<true | false | "">` (displays scale)
  
-**Attention:** If `compass=true` and `scale=true` are used in compination with `ResponseType=data` (Base64-Format) the api will return one seperate base64 decoded compass image and three scale images. The returned map images (map-overview, map-city, map-details) must be kept at response resolution (600x860) otherwise the scale does not fit the map.
+**Attention:** If `compass=true` and `scale=true` are used in compination with `ResponseType=data` (Base64-Format) the api will return one seperate base64 decoded compass image and three scale images. The returned map images (map-overview, map-city, map-details) must be kept at response resolution (600x790) otherwise the scale does not fit the map.
 
 ### Optional pois on maps
 To display pois on the map the poi data from [PTT-Mikrolage-API](https://github.com/PropTechTools/PTT-API-Solutions/blob/master/ptt-mikro-api.md#optional-api-settings-parameters)-Response
