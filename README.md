@@ -8,9 +8,11 @@ The "Macrolage" module enables the processing request of a meaningful macro loca
 **Attention:** The user and api-key shown below belong to a test account whose request range is limited to five communities only. 
 <br/>
 <br/>
-**Test-User:** test.user@proptechtools.de
+**Test-User:** sYp4kEAtyUnH67K1
 <br/>
 **Test-ApiKey:** gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU
+<br/>
+**Test-Requester:** test@proptechtools.de
 <br/>
 <br/>
 <br/>
@@ -26,7 +28,7 @@ The following five communities are available in the DTE-system:
 
 
 ### 2) Live-System
-
+When using your own Account-Credentials (also when using your own testaccount) you have to switch to the Live-System.<br> 
 Changing from DTE-System to Live-System (with access to the complete database) is easy:
 
 * Delete the `dte` in URL: www.proptechapi.de/dte/macrolage/json... => www.proptechapi.de/macrolage/json...
