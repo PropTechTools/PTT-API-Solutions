@@ -51,13 +51,14 @@ function countDown(htlm_elem){
 function microlage_search(div, url) {
     collectData();
 
-    //Credentials DTE
+	//Credentials DTE
+	
 	var apikey = "gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU";
-    var apiname = "test.user@proptechtools.de";
-    var system = "dte";
-
+    var apiname = "sYp4kEAtyUnH67K1";
+	var system = "dte";
+	
 	//Requestername - For billing purposes; 
-	var apirequester = "PropTechTools_GmbH"
+	var apirequester = "test@proptechtools.de"
     
   
     URL_PARAM = "";
@@ -106,9 +107,12 @@ function microlage_search(div, url) {
 <h2>PropTechApi - Developing and Testing Environment (DTE)</h2>
 
 <h3 style="text-decoration: underline;">Anmeldedaten:</h3> 
-Test-User: <input readonly="readonly" type="text" id="user" value="test.user@proptechtools.de" disabled placeholder="">
+Test-Apiname: <input readonly="readonly" type="text" id="user" value="sYp4kEAtyUnH67K1" disabled placeholder="">
 Test-Apikey: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU" disabled placeholder="">
+Test-Requester: <input readonly="readonly" type="text" id="requester" value="test@proptechtools.de" disabled placeholder="">
 <br>
+<a style="font-style:italic">Bei Verwendung der eigenen Anmeldedaten muss "dte" in der URL entfernt werden: www.proptechapi.de/dte/microlage/json... => www.proptechapi.de/microlage/json...</a>
+
 <br>
 <h3 style="text-decoration: underline;">Api-Inputparameter:</h3> 
 <h4>abfragbare Testdatensätze:</h4> 
@@ -171,7 +175,7 @@ Test-Apikey: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsbo
 <hr>
 
 <h2 >Mikrolage-API (Easy-Integration)</h2>
-<li>Requesttime around <b>10 sec</b></li>
+<li>Requesttime around <b>6 sec</b></li>
 <li>User enters all userdata, all userdata is collected and requested in <b>one request</b> when pressing the button `Mikrolage abrufen`</li>
 <li><a href="https://github.com/PropTechTools/PTT-API-Solutions/blob/master/doc/micro_api_parameter.xlsx" target="_blank" style="color:#ff9800">Mikro-Api-Parameter Übersicht</a></li>
 <br>
@@ -182,10 +186,6 @@ Test-Apikey: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsbo
 	<input id="bewertungsobjekt" class="save" placeholder="Bewertungsobjekt-Koordinaten">
 	<br>
 	
-	<div>Stadtzentrum-Koordinaten* (50.775396,6.086234)</div>
-	<input id="stadtzentrum" class="save" placeholder="Stadtzentrum-Koordinaten">
-	<br>
-
 	<div>Objektkategorie* (Integration via Dropdownsearch wird empfohlen):</div>
 	<select id="objektkategorie" class="save">
 		<optgroup label="Textkategorie #1"></optgroup>

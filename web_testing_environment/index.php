@@ -14,7 +14,7 @@ header("Access-Control-Allow-Origin: *");
 <div style="height:20px"></div>
 
 <a href="makro-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px">Makrolage-API</a>
-<a href="mikro-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Mikrolage-API[Easy]</a>
+<a href="mikro-api-easy.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Mikrolage-API[Easy]</a>
 <!--<a href="mikro-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Mikrolage-API[Advanced]</a>-->
 <a href="kartenset-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Kartenset-API</a>
 <hr style="margin-top: 10px;">
@@ -22,9 +22,11 @@ header("Access-Control-Allow-Origin: *");
 <h2>PropTechApi - Developing and Testing Environment (DTE)</h2>
 
 <h3 style="text-decoration: underline;">Anmeldedaten:</h3> 
-Test-User: <input readonly="readonly" type="text" id="user" value="test.user@proptechtools.de" disabled placeholder="">
+Test-Apiname: <input readonly="readonly" type="text" id="user" value="" disabled placeholder="sYp4kEAtyUnH67K1">
 Test-Apikey: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU" disabled placeholder="">
+Test-Requester: <input readonly="readonly" type="text" id="requester" value="test@proptechtools.de" disabled placeholder="">
 <br>
+<a style="font-style:italic">Bei Verwendung der eigenen Anmeldedaten muss "dte" in der URL entfernt werden: www.proptechapi.de/dte/macrolage/json... => www.proptechapi.de/macrolage/json...</a>
 <br>
 <h3 style="text-decoration: underline;">Api-Inputparameter:</h3> 
 <h4>abfragbare Testdatensätze:</h4> 

@@ -14,7 +14,7 @@ function kartenset_search() {
 
 	//Credentials
 	var apikey = "gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU";
-	var apiname = "test.user@proptechtools.de";
+	var apiname = "sYp4kEAtyUnH67K1";
 	
 	//Obligatory datainput
 	var address = encodeURIComponent($('#kartenset_address').val());
@@ -24,7 +24,7 @@ function kartenset_search() {
 	var koord = $('#kartenset_koord').val().replace(' ','');
 
 	//Requestername - For billing purposes; 
-	var apirequester = encodeURIComponent("PropTechTools_GmbH");
+	var apirequester = encodeURIComponent("test@proptechtools.de");
 
 	console.log(kartenset_responsetype)
 
@@ -74,9 +74,12 @@ function kartenset_search() {
 <h2>PropTechApi - Developing and Testing Environment (DTE)</h2>
 
 <h3 style="text-decoration: underline;">Anmeldedaten:</h3> 
-Test-User: <input readonly="readonly" type="text" id="user" value="test.user@proptechtools.de" disabled placeholder="">
+Test-Apiname: <input readonly="readonly" type="text" id="user" value="sYp4kEAtyUnH67K1" disabled placeholder="">
 Test-Apikey: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU" disabled placeholder="">
+Test-Requester: <input readonly="readonly" type="text" id="requester" value="test@proptechtools.de" disabled placeholder="">
 <br>
+<a style="font-style:italic">Bei Verwendung der eigenen Anmeldedaten muss "dte" in der URL entfernt werden: www.proptechapi.de/dte/kartenset/json... => www.proptechapi.de/kartenset/json...</a>
+
 <br>
 <h3 style="text-decoration: underline;">Api-Inputparameter:</h3> 
 <h4>abfragbare Testdatensätze:</h4> 

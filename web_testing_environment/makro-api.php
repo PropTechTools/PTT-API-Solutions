@@ -15,8 +15,10 @@ function macrolage_search() {
 
     //Credentials
     var apikey = "gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU";
-    var apiname = "test.user@proptechtools.de";
-    	
+	var apiname = "sYp4kEAtyUnH67K1";
+	var system = "dte";
+	
+
 	//Obligatory parameters
 	var gemeindeschluessel = $('#macro_gemeindeschluessel').val()
 	var address = encodeURIComponent($('#macro_address').val())
@@ -34,13 +36,13 @@ function macrolage_search() {
 
 	console.log(wirtschaftsstruktur1+wirtschaftsstruktur2+wirtschaftsstruktur3)
 	//Requestername - For billing purposes; 
-	var apirequester = "PropTechTools_GmbH"
+	var apirequester = "test@proptechtools.de"
 	
 	if(koord != ""){
-		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+
+		URL = "https://www.proptechapi.de/"+system+"/macrolage/json?apiKey="+apikey+
 		"&name="+apiname+
-		"&latlng="+koord+
 		"&requester="+apirequester+
+		"&latlng="+koord+
 		"&textlength="+textlength+
 		"&fazit="+fazit+
 		"&wirtschaftsstruktur1="+wirtschaftsstruktur1+
@@ -50,8 +52,8 @@ function macrolage_search() {
 	if(address != ""){
 		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+
 		"&name="+apiname+
-		"&address="+address+
 		"&requester="+apirequester+
+		"&address="+address+
 		"&textlength="+textlength+
 		"&fazit="+fazit+
 		"&wirtschaftsstruktur1="+wirtschaftsstruktur1+
@@ -59,10 +61,10 @@ function macrolage_search() {
 		"&wirtschaftsstruktur3="+wirtschaftsstruktur3
 	}
 	if(gemeindeschluessel != ""){
-		URL = "https://www.proptechapi.de/dte/macrolage/json?apiKey="+apikey+
+		URL = "https://www.proptechapi.de/"+system+"/macrolage/json?apiKey="+apikey+
 		"&name="+apiname+
-		"&communityKey="+gemeindeschluessel+
 		"&requester="+apirequester+
+		"&communityKey="+gemeindeschluessel+
 		"&textlength="+textlength+
 		"&fazit="+fazit+
 		"&wirtschaftsstruktur1="+wirtschaftsstruktur1+
@@ -106,9 +108,11 @@ function macrolage_search() {
 <h2>PropTechApi - Developing and Testing Environment (DTE)</h2>
 
 <h3 style="text-decoration: underline;">Anmeldedaten:</h3> 
-Test-User: <input readonly="readonly" type="text" id="user" value="test.user@proptechtools.de" disabled placeholder="">
+Test-Apiname: <input readonly="readonly" type="text" id="user" value="sYp4kEAtyUnH67K1" disabled placeholder="">
 Test-Apikey: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU" disabled placeholder="">
+Test-Requester: <input readonly="readonly" type="text" id="requester" value="test@proptechtools.de" disabled placeholder="">
 <br>
+<a style="font-style:italic">Bei Verwendung der eigenen Anmeldedaten muss "dte" in der URL entfernt werden: www.proptechapi.de/dte/macrolage/json... => www.proptechapi.de/macrolage/json...</a>
 <br>
 <h3 style="text-decoration: underline;">Api-Inputparameter:</h3> 
 <h4>abfragbare Testdatensätze:</h4> 
@@ -201,7 +205,7 @@ Test-Apikey: <input readonly="readonly" type="text" id="key" value="gI1Nl-ikJsbo
 <br><br>
 
 <div id="wirtschaftsstruktur_div">
-	<div>Wirtschaftsstruktur:</div>
+	<div>Wirtschaftsstruktur (Automatische Ausgabe bei Städten über 15.000 Einwohnern):</div>
 	<a href="https://github.com/PropTechTools/PTT-API-Solutions/blob/master/doc/wirtschaftsstruktur_parameter.xlsx" target="_blank" style="color:#ff9800">wirtschaftsstruktur_parameter.xlsx</a>
 
 	<br><br>
