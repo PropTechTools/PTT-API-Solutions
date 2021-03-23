@@ -16,7 +16,6 @@ function collectData(){
     //Init Params
     api_req = {
         bewertungsobjekt:"50.771279,6.085676",
-        stadtzentrum:"50.775396,6.086234"
     };
     $('.save').each(function(){
         if(this.value != ""){
@@ -278,6 +277,9 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 <!--MICROLAGE BEARBEITUNG-->  
 <hr>          
 <div id="Bearbeitung_micro">
+	<br>
+	<div>Stadtzentrum-Koordinaten (50.775396,6.086234)</div>
+	<input id="stadtzentrum" class="save" placeholder="Stadtzentrum-Koordinaten">
 
 	<h4>1.	Innerörtliche Lage:</h4>
 	<select id="inneroertliche_lage" class="save">
