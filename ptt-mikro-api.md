@@ -24,7 +24,7 @@
 * Time saving is accomplished by splitting **one request at the end** into **two requests**:
   - request at the beginning:
     * specified by the parameter `auto_analysis = true` 
-    * reduced to parameter `objektkategorie` and koordinats/mapbased parameters `bewertungsobjekt`, `stadtzentrum`, `aerztliche_primaerversorgung_ort_koordinate` and `aperiodischer_bedarf_ort_koordinate`.
+    * reduced to parameter `objektkategorie` and koordinats/mapbased parameters `bewertungsobjekt`.
     * still takes 6 sec to load but is loaded in the background while user is inputting additional userdata
   - request at the end:
     * including all userdata in the query
