@@ -16,4 +16,4 @@
 * 2020-02-24 [v0.0.4.4] Changing stadtteilzentrum_check to stadtteilzentrum_naehe (both params will work) in [micro_api_parameter.xlsx](doc/micro_api_parameter.xlsx)
 * 2021-02-13 [v0.0.7.4] Kartenset-API: Adding requestparameter (scale, compass, border, pois) -> [updated requestparameters](ptt-kartenset-api.md)
 * 2021-03-22 [v0.0.7.4] Minor explainatory updates in integrationsmanual: Clearification of apikey, apiname, requester
-* 2021-03-22 [v0.0.7.4] Mikrolage-API: Reducing obligatory requestparameter.`stadtzentrum`, `aerztliche_primaerversorgung_ort_koordinate` and `aperiodischer_bedarf_ort_koordinate` are not obligatory anymore.
+* 2021-04-14 [v0.0.7.4] Mikrolage-API: Reducing obligatory requestparameter.`stadtzentrum`, `aerztliche_primaerversorgung_ort_koordinate` and `aperiodischer_bedarf_ort_koordinate` are not obligatory anymore.
