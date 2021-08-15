@@ -70,7 +70,7 @@
             "laermbelastung":"",
             "versorgungsinfrastruktur":"Als Oberzentrum profitiert Aachen <...> auch die ärztliche Primärversorgung vor Ort gegeben.",
             "naherholungsmoeglichkeiten":"",
-            "parkplatzsituatiion":"",
+            "parkplatzsituation":"",
             "wohnlage":"",
             "fazit":""
         },
@@ -106,12 +106,12 @@
             "laermbelastung":"",
             "versorgungsinfrastruktur":"Als Oberzentrum profitiert Aachen <...> auch die ärztliche Primärversorgung vor Ort gegeben.",
             "naherholungsmoeglichkeiten":"Bedingt durch die Nähe zu einem Gewässer ( <...> im Umfeld der Immobilie.",
-            "parkplatzsituatiion":"",
+            "parkplatzsituation":"",
             "wohnlage":"Gemäß dem Capital Immobilien Kompass <...> vor Ort entspricht.",
             "fazit":"Für die vorliegende Nutzung wird die Mikrolage insgesamt als gut beurteilt."
         },
         "verkehrsinfrastruktur": {
-            "ueberschrift":"Erläuterungen zur Mikrolage",
+            "ueberschrift":"Erläuterungen zur Verkehrsinfrastruktur",
             "individualverkehrsanbindung_allgemein":"",
             "autobahnanschluss":"",
             "oepnv_lokal":"",
