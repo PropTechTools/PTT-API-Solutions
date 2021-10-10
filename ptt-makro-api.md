@@ -2,6 +2,7 @@
 ***
 
 ## I) PTT-Makro-API
+The "Macrolage" module enables the processing request of a meaningful macro location description including all relevant and current economic and statistical key figures for any desired community in Germany.
 
 ### Obligatory parameters:
 * One of the following parameters must be passed:
