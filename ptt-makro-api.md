@@ -4,21 +4,19 @@
 ## I) PTT-Makro-API
 The "Macrolage" module enables the processing request of a meaningful macro location description including all relevant and current economic and statistical key figures for any desired community in Germany.
 
-### Obligatory parameters:
-* One of the following parameters must be passed:
-  * address <br>(success probability less than 100% -> depending on address analysis)
-  * latlng <br>(success probability 100%)
-  * communityKey <br>(success probability 100%)
-* textlength
-  * possible values: `< short | long >`
+### Requestparameters:
+Wirtschaftsstruktur is automatically analysed in communitys with a population larger then 15.000, but can be overwritten by requesting `wirtschaftsstruktur1`,`wirtschaftsstruktur2` and `wirtschaftsstruktur3`.
 
-### Optional parameters:
-* fazit
-  * possible values: `< sehr_gut | gut | mittel | maessig | schlecht >`
+| Property 	| Input-Type 	| Mandatory? 	| Default 	| Possible Values 	|
+|:---	|:---	|:---	|:---	|:---	|
+| textlength 	| dropdown 	| <b>obligatory</b> 	| -	| `short`,`long` 	|
+| fazit 	| dropdown	| optional 	| `""` 	| `""`,`sehr_gut`,`gut`,`mittel`,`maessig`,`schlecht` 	|
+| wirtschaftsstruktur1 	| dropdown	| optional 	| `""` or automatically analysed 	| `""`,`keine_angabe`,`agrarwirtschaft`,`automobilindustrie`,`bahnindustrie`,`bergbau_und_rohstoffe`,`bio_und_gentechnologie`,`chemie_und_pharmazie`,`dienstleistung_und_handwerk`,`digitalwirtschaft`,`elektrotechnik_und_elektronikindustrie`,`energie_und_umwelt`,`ernaehrungsindustrie`,`feinkeramische_industrie`,`feinmechanik_und_optik`,`finanzwirtschaft`,`forschung_und_entwicklung`,`genussmittelindustrie`,`gesundheitswirtschaft`,`glasindustrie`,`handelsindustrie`,`high_tech_und_innovation`,`holz_und_moebelindustrie`,`informationstechnik_und_kommunikation`,`kautschukindustrie`,`kosmetikindustrie`,`kredit_und_versicherungsgewerbe`,`kultur_und_kreativwirtschaft`,`kunst_und_klebstoffindustrie`,`kunststoffindustrie`,`leder_warenindustrie`,`luft_und_raumfahrt`,`maritime_wirtschaft`,`maschinen_und_anlagenbau`,`medien_und_marketing`,`metallindustrie`,`papier_und_druckindustrie`,`pflegewirtschaft`,`post_und_kuriergewerbe`,`ruestungsindustrie`,`schliesssysteme_und_sicherheitstechnik`,`schmuckindustrie`,`schuhindustrie`,`spielwarenindustrie`,`sportwirtschaft`,`textilindustrie`,`tourismus_und_gastronomie`,`verkehr_und_logistik`,`verpackungsindustrie`,`werkstoffindustrie`,`wirtschaft_und_politik` 	|
+| wirtschaftsstruktur2 	| dropdown	| optional 	| `""` or automatically analysed 	| `""`,`keine_angabe`,`agrarwirtschaft`,`automobilindustrie`,`bahnindustrie`,`bergbau_und_rohstoffe`,`bio_und_gentechnologie`,`chemie_und_pharmazie`,`dienstleistung_und_handwerk`,`digitalwirtschaft`,`elektrotechnik_und_elektronikindustrie`,`energie_und_umwelt`,`ernaehrungsindustrie`,`feinkeramische_industrie`,`feinmechanik_und_optik`,`finanzwirtschaft`,`forschung_und_entwicklung`,`genussmittelindustrie`,`gesundheitswirtschaft`,`glasindustrie`,`handelsindustrie`,`high_tech_und_innovation`,`holz_und_moebelindustrie`,`informationstechnik_und_kommunikation`,`kautschukindustrie`,`kosmetikindustrie`,`kredit_und_versicherungsgewerbe`,`kultur_und_kreativwirtschaft`,`kunst_und_klebstoffindustrie`,`kunststoffindustrie`,`leder_warenindustrie`,`luft_und_raumfahrt`,`maritime_wirtschaft`,`maschinen_und_anlagenbau`,`medien_und_marketing`,`metallindustrie`,`papier_und_druckindustrie`,`pflegewirtschaft`,`post_und_kuriergewerbe`,`ruestungsindustrie`,`schliesssysteme_und_sicherheitstechnik`,`schmuckindustrie`,`schuhindustrie`,`spielwarenindustrie`,`sportwirtschaft`,`textilindustrie`,`tourismus_und_gastronomie`,`verkehr_und_logistik`,`verpackungsindustrie`,`werkstoffindustrie`,`wirtschaft_und_politik` 	|
+| wirtschaftsstruktur3 	| dropdown 	| optional 	| `""` or automatically analysed	| `""`,`keine_angabe`,`agrarwirtschaft`,`automobilindustrie`,`bahnindustrie`,`bergbau_und_rohstoffe`,`bio_und_gentechnologie`,`chemie_und_pharmazie`,`dienstleistung_und_handwerk`,`digitalwirtschaft`,`elektrotechnik_und_elektronikindustrie`,`energie_und_umwelt`,`ernaehrungsindustrie`,`feinkeramische_industrie`,`feinmechanik_und_optik`,`finanzwirtschaft`,`forschung_und_entwicklung`,`genussmittelindustrie`,`gesundheitswirtschaft`,`glasindustrie`,`handelsindustrie`,`high_tech_und_innovation`,`holz_und_moebelindustrie`,`informationstechnik_und_kommunikation`,`kautschukindustrie`,`kosmetikindustrie`,`kredit_und_versicherungsgewerbe`,`kultur_und_kreativwirtschaft`,`kunst_und_klebstoffindustrie`,`kunststoffindustrie`,`leder_warenindustrie`,`luft_und_raumfahrt`,`maritime_wirtschaft`,`maschinen_und_anlagenbau`,`medien_und_marketing`,`metallindustrie`,`papier_und_druckindustrie`,`pflegewirtschaft`,`post_und_kuriergewerbe`,`ruestungsindustrie`,`schliesssysteme_und_sicherheitstechnik`,`schmuckindustrie`,`schuhindustrie`,`spielwarenindustrie`,`sportwirtschaft`,`textilindustrie`,`tourismus_und_gastronomie`,`verkehr_und_logistik`,`verpackungsindustrie`,`werkstoffindustrie`,`wirtschaft_und_politik` 	|
 
-Wirtschaftsstruktur is automatically analysed in communitys with a population larger then 15.000, but can be overwritten by requesting the following parameters: 
-* wirtschaftsstruktur1/wirtschaftsstruktur2/wirtschaftsstruktur3
-  * possible values: [wirtschaftsstruktur_parameters.xlsx](doc/wirtschaftsstruktur_parameter.xlsx).
+### Useful Documents:
+  * [wirtschaftsstruktur_parameters.xlsx](doc/wirtschaftsstruktur_parameter.xlsx).
 
 ### Postman Examples
 
