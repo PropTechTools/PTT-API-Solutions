@@ -239,17 +239,8 @@ It is not always essential or worthwhile to provide all data for a full text gen
 | `wohnheim` 	| &#10003; 	| &#10003; 	| &#10003; 	| &#10003; 	| &#10003; 	|
 | `zweifamilienhaus` 	| &#10003; 	| &#10003; 	| &#10003; 	| &#10003; 	| &#10003; 	|
 
-***
-### Useful Documents:
-
-* [micro_api_parameter.xlsx](doc/micro_api_parameter.xlsx)
-<br>=> Overview of all requestable micro-api-parameters and their necessary values.
 
 ***
 ### Examples
 * [GET-Request: Easy Integration (1 Request)](examples/mikro-api-001-easy-1request.md)
 * [GET-Request: Advanced Integration (2 Requests)](examples/mikro-api-002-advanced-2requests.md)
-
-***
-### Web-testing-environment 
-The PTT-Mikro-API can also be tested here: [https://api.proptechtools.de/mikro-api-easy.php](https://api.proptechtools.de/mikro-api-easy.php).
