@@ -2,7 +2,7 @@
 
 **BASE-URL**: https://www.proptechapi.de
 
-**URL** : `/dte/microlage/json?apiKey=<apikey>&name=<name>&requester=<customer>&textlength=short&bewertungsobjekt=50.771279,6.085676&stadtzentrum=50.775396,6.086234&objektkategorie=1&inneroertliche_lage=teil&umgebungsbebauung1=wohnwirtschaftliche_nutzung&bauweise1=geschlossen&aerztliche_primaerversorgung=gegeben&aperiodischer_bedarf=vollstaendig&wohnlage_karte=gut&wohnlage_anwender=gut&fazit_mikrolage=gut&fazit_verkehrsanbindung=gut`
+**URL** : `/dte/microlage/json?apiKey=gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU&name=sYp4kEAtyUnH67K1&requester=test@proptechtools.de&latlng=47.8415313,8.8581662&objektkategorie=1&inneroertliche_lage=teil&fussgaengerzone=false&separiert=false&randlage=false&geografische_besonderheiten_praezisierung_gewaesser=bach&umgebungsbebauung1=wohnwirtschaftliche_nutzung&bauweise1=geschlossen&umgebungsbebauung2=keine_angabe&bauweise2=keine_angabe&nutzungsverhaeltnis_slider=3&aerztliche_primaerversorgung=gegeben&aperiodischer_bedarf=vollstaendig&wohnlage_karte=gut&wohnlage_anwender=gut&fazit_mikrolage=gut&fazit_verkehrsanbindung=gut&`
 
 **Method** : `GET`
 
@@ -10,12 +10,11 @@
 
 | parameter        | value         
 | ------------- |:-------------:| 
-| apiKey     | `apikey` | 
-| name     | `name` |
-| requester     | customer |
-| bewertungsobjekt     | 47.8415313,8.8581662 |
-| stadtzentrum     | 47.8415313,8.8581662 |
-| objektkategorie     | 1 |
+| apiKey     | gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU | 
+| name     | sYp4kEAtyUnH67K1 |
+| requester     | test@proptechtools.de |
+| latlng    | 47.8415313,8.8581662 |
+| objektkategorie     | einfamilienhaus |
 | inneroertliche_lage     | teil |
 | umgebungsbebauung1     | wohnwirtschaftliche_nutzung |
 | bauweise1     | geschlossen |
