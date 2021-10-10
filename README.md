@@ -32,21 +32,32 @@ When using your own Account-Credentials (also when using your own testaccount) y
 Changing from DTE-System to Live-System (with access to the complete database) is easy:
 
 * Delete the `dte` in URL: www.proptechapi.de/dte/macrolage/json... => www.proptechapi.de/macrolage/json...
-* Update to your personal PTT-credentials:
-    * apiKey (your private api key)
-    * name (your username for the PTT API)
-
+* Update to your personal PTT-credentials (all credentials can be found in your webplattformaccount (accountmanagment):
+    * apiKey
+    * name
+    * requester
 
 ### Obligatory parameters for the GET-Request for accessing every PTT API:
-
-* apiKey (your private api key)
-* name (your username for the PTT API)
-* requester (as an option you can specify between individuel api-requests all using the same `apiKey` and `name` for comprehensibility and billing purposes, if not nessesary set to `customer` or leave empty)
+There are five different obligatory parameters which have to be included in every api-request. While `apiKey`,`name` and `requester` are for authentication purposes, `latlng` is used to autoanalyse the full address. In combination with `objectkategorie` the address values make up a unique order that connects all api-requests of different api-module and is displayed in the PTT-Webplattform module <b>Auftragsmanagement</b>. To remove uncertainty in the autoanalysis of the address, the addressparameters can be optionally overwritten by seperatlly requesting them.
+<br>
+| Property 	| Explanation 	| Mandatory? 	| Default 	| 
+|:---	|:---	|:---	|:---	|
+| apiKey 	| Authentication purpose. `apikey` is unique per company 	| obligatory 	| -	| 	|
+| name 	| Authentication purpose. `name` is unique per company | obligatory 	|  -	| 
+| requester 	| Authentication purpose. `requester` is unique per account 	| obligatory 	| -	| 	|
+| latlng 	| Ordergeneration: Submit coordinates to generate unique order and connect api-requests of different modules with via addressparameters to it | obligatory 	| Format: `XX.XXXXXX,XX.XXXXXX` 	|
+| objektkategorie 	| Ordergeneration: Submit coordinates to generate unique order and connect api-requests of different modules with via addressparameters to it	| obligatory 	| [List of parameters](https://github.com/PropTechTools/PTT-API-Solutions/edit/master/ptt-mikro-api.md#overview)	|
+| adresszusatz 	| Option to overwrite address autoanalysed by `latlng`  | optional 	| autoanalysed if empty	|
+| strassenname 	| Option to overwrite address autoanalysed by `latlng`  | optional 	| autoanalysed if empty	|
+| hausnummer 	| Option to overwrite address autoanalysed by `latlng`  | optional 	| autoanalysed if empty	|
+| stadt 	| Option to overwrite address autoanalysed by `latlng`  | optional 	| autoanalysed if empty	|
+| plz 	| Option to overwrite address autoanalysed by `latlng` 	| optional 	| autoanalysed if empty	|
+| bundesland 	| Option to overwrite address autoanalysed by `latlng`  | optional 	| autoanalysed if empty	|
+| land 	| Option to overwrite address autoanalysed by `latlng` 	| optional 	| autoanalysed if empty	|
 
 ### [I) PTT-Makro-API](ptt-makro-api.md)
 ### [II) PTT-Mikro-API](ptt-mikro-api.md)
 ### [III) PTT-Kartenset-API](ptt-kartenset-api.md)
-
 
 ### Web-testing-environment 
 The PTT API can also be tested here: [https://api.proptechtools.de](https://api.proptechtools.de).
