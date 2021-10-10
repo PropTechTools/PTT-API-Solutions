@@ -28,7 +28,7 @@ can be used by adding `data=true` to the Mikrolage-Request.
 
 | Property 	| Explanation 	| Mandatory? 	| Default 	|Possible Values 	| 
 |:---	|:---	|:---	|:---	|:---	|
-| supermarkt	|  -> `data`: returning map-images base64 decoded <br> -> `doc`: returning a word-document | <b>obligatory</b> | -| `<[lat,lng],[lat,lng]...>` |
+| supermarkt	|  displays all requested pois of this type | optional | -| `<[lat,lng],[lat,lng]...>` |
 | restaurant	|  displays all requested pois of this type | optional | -| `<[lat,lng],[lat,lng]...>` |
 | einkaufszentrum	|  displays all requested pois of this type  | optional | -| `<[lat,lng],[lat,lng]...>`|
 | autobahnanschluss	|  displays all requested autobahnanschluss | optional | -| `<[lat,lng],[lat,lng]...>`|
