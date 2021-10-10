@@ -2,7 +2,9 @@
 ***
 
 ## III) PTT-Kartenset-API
+The "kartenset" module enables the processing request of map material.
 
+***
 ### Requestparameters
 
 | Property 	| Explanation 	| Mandatory? 	| Default 	|Possible Values 	| 
@@ -17,6 +19,7 @@
 
 </br>
 
+***
 ### Optional pois on maps
 To display pois on the map the poi data from [PTT-Mikrolage-API](https://github.com/PropTechTools/PTT-API-Solutions/blob/master/ptt-mikro-api.md#optional-api-settings-parameters)-Response
 can be used by adding `data=true` to the Mikrolage-Request.
@@ -35,6 +38,7 @@ can be used by adding `data=true` to the Mikrolage-Request.
 
 </br>
 
+***
 ### Examples
 
 * [GET-Request: Kartenset-Data](examples/kartenset-api-001-doc.md)
