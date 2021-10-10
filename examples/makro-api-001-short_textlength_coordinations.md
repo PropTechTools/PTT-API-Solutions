@@ -2,7 +2,7 @@
 
 **BASE-URL**: https://www.proptechapi.de
 
-**URL** : `/dte/macrolage/json?apiKey=<apikey>&latlng=47.8415313,8.8581662&name=<name>&requester=<customer>&textlength=short`
+**URL** : `/dte/macrolage/json?apiKey=gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU&latlng=47.8415313,8.8581662&name=sYp4kEAtyUnH67K1&requester=test@proptechtools.de&objektkategorie=einfamilienhaus&textlength=short`
 
 **Method** : `GET`
 
@@ -10,10 +10,11 @@
 
 | parameter        | value         
 | ------------- |:-------------:| 
-| apiKey     | `apikey` | 
-| latlng     | 47.8415313,8.8581662 |
-| name     | `name` |
-| requester     | customer |
+| apiKey     | gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU | 
+| name     | sYp4kEAtyUnH67K1 |
+| requester     | test@proptechtools.de |
+| latlng    | 47.8415313,8.8581662 |
+| objektkategorie     | einfamilienhaus |
 | textlength     | short |
 
 ## Success Response

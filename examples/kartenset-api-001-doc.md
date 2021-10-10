@@ -2,7 +2,7 @@
 
 **BASE-URL**: https://www.proptechapi.de
 
-**URL** : `/dte/kartenset/json?apiKey=<apikey>&name=<name>&requester=<customer>&latlng=47.8415313,8.8581662&responseType=data`
+**URL** : `/dte/kartenset/json?apiKey=gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU&name=sYp4kEAtyUnH67K1&requester=test@proptechtools.de&latlng=47.8415313,8.8581662&objektkategorie=einfamilienhaus&responseType=doce`
 
 **Method** : `GET`
 
@@ -10,14 +10,13 @@
 
 | parameter        | value         
 | ------------- |:-------------:| 
-| apiKey     | `apikey` | 
-| name     | `name` |
-| requester     | customer |
-| latlng     | 47.8415313,8.8581662 |
-| responseType     | data |
-| border     | true |
-| compass     | true |
-| scale     | true |
+| apiKey     | gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU | 
+| name     | sYp4kEAtyUnH67K1 |
+| requester     | test@proptechtools.de |
+| latlng    | 47.8415313,8.8581662 |
+| objektkategorie     | einfamilienhaus |
+| responseType     | doc |
+
 
 ## Success Response
 

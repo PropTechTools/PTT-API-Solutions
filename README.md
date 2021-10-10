@@ -43,7 +43,7 @@ There are five different obligatory parameters which have to be included in ever
 | apiKey 	| Authentication purpose. `apikey` is unique per company 	| <b>obligatory</b> 	| -	| 	|
 | name 	| Authentication purpose. `name` is unique per company | <b>obligatory</b> 	|  -	| 
 | requester 	| Authentication purpose. `requester` is unique per account 	| <b>obligatory</b> 	| -	| 	|
-| latlng 	| Ordergeneration: Submit coordinates to generate unique order and connect api-requests of different modules with via addressparameters to it | <b>obligatory</b> 	| Format: `XX.XXXXXX,XX.XXXXXX` 	|
+| latlng 	| Ordergeneration: Coordinates need to be submitted to generate unique order, that connects all api-requests from different modules with the same address. | <b>obligatory</b> 	| Format: `XX.XXXXXX,XX.XXXXXX` 	|
 | objektkategorie 	| Ordergeneration: Submit coordinates to generate unique order and connect api-requests of different modules with via addressparameters to it	| <b>obligatory</b> 	| [List of parameters](https://github.com/PropTechTools/PTT-API-Solutions/blob/master/ptt-mikro-api.md#overview)	|
 | adresszusatz 	| Option to overwrite address autoanalysed by `latlng`  | optional 	| autoanalysed if empty	|
 | strassenname 	| Option to overwrite address autoanalysed by `latlng`  | optional 	| autoanalysed if empty	|

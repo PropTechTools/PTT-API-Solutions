@@ -37,4 +37,4 @@ can be used by adding `data=true` to the Mikrolage-Request.
 
 ### Examples
 
-* [GET-Request: Kartenset-Data](examples/kartenset-api-001-data.md)
+* [GET-Request: Kartenset-Data](examples/kartenset-api-001-doc.md)
