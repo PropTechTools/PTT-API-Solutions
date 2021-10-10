@@ -22,7 +22,6 @@ The following five communities are available in the DTE-system:
 | 053340002002     | city | Aachen | Nordrhein-Westfalen | 50.777180,6.093335 |
 | 081365001088     | city | Aalen | Baden-Württemberg | 48.837336,10.094682 |
 | 064390001001     | community | Aarbergen | Hessen | 50.245978,8.078530 |
-<br/>
 
 ### 2) Live-System
 When using your own Account-Credentials (also when using your own testaccount) you have to switch to the Live-System.<br> 
@@ -38,8 +37,7 @@ Changing from DTE-System to Live-System (with access to the complete database) i
 
 ### Obligatory parameters for the GET-Request for accessing every PTT API:
 There are five different obligatory parameters which have to be included in every api-request. While `apiKey`,`name` and `requester` are for authentication purposes, `latlng` is used to autoanalyse the full address. In combination with `objectkategorie` the address values make up a unique order that connects all api-requests of different api-module and is displayed in the PTT-Webplattform module <b>Auftragsmanagement</b>. To remove uncertainty in the autoanalysis of the address, the addressparameters can be optionally overwritten by seperatlly requesting them.
-<br/>
-<br/>
+
 | Property 	| Explanation 	| Mandatory? 	| Default 	| 
 |:---	|:---	|:---	|:---	|
 | apiKey 	| Authentication purpose. `apikey` is unique per company 	| <b>obligatory</b> 	| -	| 	|
@@ -54,20 +52,17 @@ There are five different obligatory parameters which have to be included in ever
 | plz 	| Option to overwrite address autoanalysed by `latlng` 	| optional 	| autoanalysed if empty	|
 | bundesland 	| Option to overwrite address autoanalysed by `latlng`  | optional 	| autoanalysed if empty	|
 | land 	| Option to overwrite address autoanalysed by `latlng` 	| optional 	| autoanalysed if empty	|
-<br/>
+
 ### [I) PTT-Makro-API](ptt-makro-api.md)
 ### [II) PTT-Mikro-API](ptt-mikro-api.md)
 ### [III) PTT-Kartenset-API](ptt-kartenset-api.md)
-<br/>
 
 ### Useful Documents:
 * [api_dropdownvalues.xlsx](doc/api_parameter.xlsx)<br>
 => Overview of all requestable dropdown-api-parameters and their necessary values.
-<br/>
 
 ### Testing-environment 
 All PTT-APIs can be tested on [https://api.proptechtools.de](https://api.proptechtools.de) or [Postman](https://documenter.getpostman.com/view/6392593/S1ETRGTx#149be5c6-8885-4ea1-be10-b2650dafe35e).
-<br/>
 
 ### Changelog
 [Changelog](ptt-changelog.md) of API-Updates
