@@ -4,7 +4,7 @@
 
 **BASE-URL**: https://www.proptechapi.de
 
-**URL** : `/dte/microlage/json?apiKey=<apikey>&name=<name>&requester=<customer>&textlength=short&bewertungsobjekt=50.771279,6.085676&stadtzentrum=50.775396,6.086234&objektkategorie=1&aerztliche_primaerversorgung=gegeben&aperiodischer_bedarf=vollstaendig&auto_analysis=true`
+**URL** : `/dte/microlage/json?apiKey=gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU&name=sYp4kEAtyUnH67K1&requester=test@proptechtools.de&latlng=47.8415313,8.8581662&objektkategorie=einfamilienhaus&aerztliche_primaerversorgung=gegeben&aperiodischer_bedarf=vollstaendig&auto_analysis=true`
 
 **Method** : `GET`
 
@@ -12,21 +12,20 @@
 
 | parameter        | value         
 | ------------- |:-------------:| 
-| apiKey     | `apikey` | 
-| name     | `name` |
-| requester     | customer |
-| bewertungsobjekt     | 47.8415313,8.8581662 |
-| stadtzentrum     | 47.8415313,8.8581662 |
-| objektkategorie     | 1 |
+| apiKey     | gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU | 
+| name     | sYp4kEAtyUnH67K1 |
+| requester     | test@proptechtools.de |
+| latlng     | 47.8415313,8.8581662 |
+| objektkategorie     | einfamilienhaus |
 | aerztliche_primaerversorgung     | gegeben |
 | aperiodischer_bedarf     | vollstaendig |
-| auto_analysis     | true |
+| <b>auto_analysis</b>     | <b>true</b> |
 
 ## 2 Request
 
 **BASE-URL**: https://www.proptechapi.de
 
-**URL** : `/dte/microlage/json?apiKey=<apikey>&name=<name>&requester=<customer>&textlength=short&bewertungsobjekt=50.771279,6.085676&stadtzentrum=50.775396,6.086234&objektkategorie=1&inneroertliche_lage=teil&umgebungsbebauung1=wohnwirtschaftliche_nutzung&bauweise1=geschlossen&wohnlage_karte=gut&wohnlage_anwender=gut&fazit_mikrolage=gut&fazit_verkehrsanbindung=gut&auto_analysis=false`
+**URL** : `/dte/microlage/json?apiKey=gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU&name=sYp4kEAtyUnH67K1&requester=test@proptechtools.de&latlng=47.8415313,8.8581662&objektkategorie=einfamilienhaus&inneroertliche_lage=teil&umgebungsbebauung1=wohnwirtschaftliche_nutzung&bauweise1=geschlossen&wohnlage_karte=gut&wohnlage_anwender=gut&fazit_mikrolage=gut&fazit_verkehrsanbindung=gut&auto_analysis=false`
 
 **Method** : `GET`
 
@@ -34,12 +33,11 @@
 
 | parameter        | value         
 | ------------- |:-------------:| 
-| apiKey     | `apikey` | 
-| name     | `name` |
-| requester     | customer |
-| bewertungsobjekt     | 47.8415313,8.8581662 |
-| stadtzentrum     | 47.8415313,8.8581662 |
-| objektkategorie     | 1 |
+| apiKey     | gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU | 
+| name     | sYp4kEAtyUnH67K1 |
+| requester     | test@proptechtools.de |
+| latlng     | 47.8415313,8.8581662 |
+| objektkategorie     | einfamilienhaus |
 | inneroertliche_lage     | teil |
 | umgebungsbebauung1     | wohnwirtschaftliche_nutzung |
 | bauweise1     | geschlossen |
@@ -47,7 +45,7 @@
 | wohnlage_anwender     | gut |
 | fazit_verkehrsanbindung     | gut |
 | fazit_mikrolage     | gut |
-| auto_analysis     | false |
+| <b>auto_analysis</b>     | <b>false</b> |
 
 
 ## Success Response 1 (auto_analysis = true) [6 sec]
