@@ -15,7 +15,6 @@ header("Access-Control-Allow-Origin: *");
 
 <a href="makro-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px">Makrolage-API</a>
 <a href="mikro-api-easy.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Mikrolage-API[Easy]</a>
-<!--<a href="mikro-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Mikrolage-API[Advanced]</a>-->
 <a href="kartenset-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Kartenset-API</a>
 <hr style="margin-top: 10px;">
 
@@ -46,7 +45,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 		<td>Gemeinde</td> 
 		<td>Aach</td> 
 		<td>Rheinland-Pfalz</td>
-		<td>49.789503, 6.590633</td>
+		<td>49.789503,6.590633</td>
 	</tr>  
 
 	<tr> 
@@ -55,7 +54,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 		<td>Stadt</td> 
 		<td>Aach</td> 
 		<td>Baden-Württemberg</td> 
-		<td>47.840882, 8.859067</td> 
+		<td>47.840882,8.859067</td> 
 	</tr> 
 
 	<tr> 
@@ -64,7 +63,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 		<td>Stadt</td> 
 		<td>Aachen</td> 
 		<td>Nordrhein-Westfalen</td> 
-		<td>50.777180, 6.093335</td> 
+		<td>50.777180,6.093335</td> 
 	</tr>  
 
 	<tr>
@@ -73,7 +72,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 		<td>Stadt</td> 
 		<td>Aalen</td> 
 		<td>Baden-Württemberg</td> 
-		<td>48.837336, 10.094682</td> 
+		<td>48.837336,10.094682</td> 
 	</tr> 
 
 	<tr> 
@@ -82,7 +81,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 		<td>Gemeinde</td> 
 		<td>Aarbergen</td> 
 		<td>Hessen</td> 
-		<td>50.245978, 8.078530</td> 
+		<td>50.245978,8.078530</td> 
 	</tr> 
 </table>
 <br>

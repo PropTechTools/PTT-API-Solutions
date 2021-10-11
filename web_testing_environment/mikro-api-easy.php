@@ -15,7 +15,7 @@ header("Access-Control-Allow-Origin: *");
 function collectData(){
     //Init Params
     api_req = {
-        bewertungsobjekt:"50.771279,6.085676",
+        latlng:"50.771279,6.085676",
     };
     $('.save').each(function(){
         if(this.value != ""){
@@ -50,14 +50,11 @@ function countDown(htlm_elem){
 function microlage_search(div, url) {
     collectData();
 
-	//Credentials DTE
-	
-	var apikey = "gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU";
-    var apiname = "sYp4kEAtyUnH67K1";
+    //Credentials
 	var system = "dte";
-	
-	//Requestername - For billing purposes; 
-	var apirequester = "test@proptechtools.de"
+    var apiKey = "gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU";
+	var name = "sYp4kEAtyUnH67K1";
+	var requester = "test@proptechtools.de"
     
   
     URL_PARAM = "";
@@ -66,9 +63,9 @@ function microlage_search(div, url) {
     }
     
     URL = "https://www.proptechapi.de/"+system+"/microlage/json?"+
-    "apiKey="+apikey+
-    "&name="+apiname+
-    "&requester="+apirequester+
+    "apiKey="+apiKey+
+    "&name="+name+
+    "&requester="+requester+
     "&"+URL_PARAM
    
     console.log(URL)
@@ -81,11 +78,9 @@ function microlage_search(div, url) {
         if (data.success == true){
             div.html(data.data.html_text);
             console.log(data.data.html_text);
-            //return;
         } else {
             div.html(data.message);
             console.log(data)
-            //return;
         }
     })
 
@@ -98,7 +93,6 @@ function microlage_search(div, url) {
 <div style="height:20px"></div>
 <a href="makro-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px">Makrolage-API</a>
 <a href="mikro-api-easy.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Mikrolage-API[Easy]</a>
-<!--<a href="mikro-api-advanced.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Mikrolage-API[Advanced]</a>-->
 <a href="kartenset-api.php" style="color:#ff9800; cursor: pointer;display: inline; text-decoration:none; font-size:26px; margin-left:20px">Kartenset-API</a>
 <hr style="margin-top: 10px;">
 
@@ -131,7 +125,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 		<td>Gemeinde</td> 
 		<td>Aach</td> 
 		<td>Rheinland-Pfalz</td>
-		<td>49.789503, 6.590633</td>
+		<td>49.789503,6.590633</td>
 	</tr>  
 
 	<tr> 
@@ -140,7 +134,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 		<td>Stadt</td> 
 		<td>Aach</td> 
 		<td>Baden-Württemberg</td> 
-		<td>47.840882, 8.859067</td> 
+		<td>47.840882,8.859067</td> 
 	</tr> 
 
 	<tr> 
@@ -149,7 +143,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 		<td>Stadt</td> 
 		<td>Aachen</td> 
 		<td>Nordrhein-Westfalen</td> 
-		<td>50.777180, 6.093335</td> 
+		<td>50.777180,6.093335</td> 
 	</tr>  
 
 	<tr>
@@ -158,7 +152,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 		<td>Stadt</td> 
 		<td>Aalen</td> 
 		<td>Baden-Württemberg</td> 
-		<td>48.837336, 10.094682</td> 
+		<td>48.837336,10.094682</td> 
 	</tr> 
 
 	<tr> 
@@ -167,7 +161,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 		<td>Gemeinde</td> 
 		<td>Aarbergen</td> 
 		<td>Hessen</td> 
-		<td>50.245978, 8.078530</td> 
+		<td>50.245978,8.078530</td> 
 	</tr> 
 </table>
 
@@ -176,102 +170,97 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 <h2 >Mikrolage-API (Easy-Integration)</h2>
 <li>Requesttime around <b>6 sec</b></li>
 <li>User enters all userdata, all userdata is collected and requested in <b>one request</b> when pressing the button `Mikrolage abrufen`</li>
-<li><a href="https://github.com/PropTechTools/PTT-API-Solutions/blob/master/doc/micro_api_parameter.xlsx" target="_blank" style="color:#ff9800">Mikro-Api-Parameter Übersicht</a></li>
+<li><a href="https://github.com/PropTechTools/PTT-API-Solutions/blob/master/ptt-mikro-api.md" target="_blank" style="color:#ff9800">Integrationsanleitung</a></li>
 <br>
 	
 <hr>	
 	<h4>Obligatorischer Parameter:</h4>
 	<div>Bewertungsobjekt-Koordinaten* (50.771279,6.085676)</div>
-	<input id="bewertungsobjekt" class="save" placeholder="Bewertungsobjekt-Koordinaten">
+	<input id="latlng" class="save" placeholder="Bewertungsobjekt-Koordinaten">
 	<br>
 	
-	<div>Objektkategorie* (Integration via Dropdownsearch wird empfohlen):</div>
+	<div>Objektkategorie* (Integration via Dropdownsearch wird empfohlen, vgl. PTT-Webplattform):</div>
+
 	<select id="objektkategorie" class="save">
-		<optgroup label="Textkategorie #1"></optgroup>
-			<option value="1">Einfamilienhaus</option>
-			<option value="1">Einfamilienhaus_mit_Einliegerwohnung</option>
-			<option value="1">Einfamilienhaus_mit_Gewerbe</option>
-			<option value="1">Zweifamilienhaus</option>
-			<option value="1">Doppelhaushaelfte</option>
-			<option value="1">Reihenhaus</option>
-			<option value="1">Mehrfamilienhaus</option>
-			<option value="1">Wohnanlage</option>
-			<option value="1">Plattenbau</option>
-			<option value="1">Eigentumswohnung</option>
-			<option value="1">Wohn_und_Geschaeftshaus_ueberwiegend_Wohnen</option>
-			<option value="1">Fluechtlingsheim</option>
-			<option value="1">Mikroappartment</option>
-			<option value="1">Studentenwohnheim</option>
-		<optgroup label="Textkategorie #2"></optgroup>
-			<option value="2">Aerztehaus</option>
-			<option value="2">Medizinisches_Versorgungszentrum</option>
-			<option value="2">Wohn_und_Geschaeftshaus_ueberwiegend_Gewerbe</option>
-			<option value="2">Buero_und_Geschaeftshaus</option>
-			<option value="2">Buerogebaeude</option>
-			<option value="2">Gewerbliches_Teileigentum</option>
-			<option value="2">Reiterhof</option>
-			<option value="2">Landwirtschaftsgebaeude</option>
-			<option value="2">Landwirtschaftliche_Hofstelle</option>
-		<optgroup label="Textkategorie #3"></optgroup>
-			<option value="3">SB_Markt</option>
-			<option value="3">Baumarkt</option>
-			<option value="3">Moebelmarkt</option>
-			<option value="3">Verbrauchermarkt</option>
-			<option value="3">Fachmarktzentrum</option>
-			<option value="3">Kaufhaus_Warenhaus</option>
-			<option value="3">Einkaufszentrum</option>
-			<option value="3">Handwerksbetrieb</option>
-			<option value="3">Werkstattgebaeude</option>
-			<option value="3">Sonstige_Gewerbeimmobilie</option>
-			<option value="3">Gewerbepark</option>
-			<option value="3">Industrieimmobilie</option>
-			<option value="3">Produktionsgebaeude</option>
-			<option value="3">Lagergebaeude</option>
-			<option value="3">Hochregallager</option>
-			<option value="3">Logistikzentrum</option>
-			<option value="3">krankenhaus</option>
-			<option value="3">Akutkrankenhaus</option>
-			<option value="3">Freizeitanlage</option>
-			<option value="3">Fitnesscenter</option>
-			<option value="3">Kino</option>
-			<option value="3">Golfplatz</option>
-			<option value="3">Badebetrieb</option>
-			<option value="3">Autohaus</option>
-			<option value="3">Tankstelle</option>
-			<option value="3">Autohof</option>
-			<option value="3">Waschanlage</option>
-			<option value="3">Garagengebaeude</option>
-			<option value="3">Tiefgarage</option>
-			<option value="3">Parkhaus</option>
-			<option value="3">Parkplatz</option>
-			<option value="3">Verkehrsbau</option>
-			<option value="3">Ausstellungsgebaeude</option>
-			<option value="3">Ausbildungsstaette</option>
-			<option value="3">Veranstaltungshalle_Kulturelle_Einrichtung</option>
-			<option value="3">Abbaugrundstueck</option>
-			<option value="3">Resthof</option>
-			<option value="3">Landwirtschaftliches_Forstwirtschaftliches_Grundstueck</option>
-			<option value="3">Unbebautes_Grundstueck</option>
-		<optgroup label="Textkategorie #4"></optgroup>
-			<option value="4">Rehaklinik_Kurklinik</option>
-			<option value="4">Pflegeheim</option>
-			<option value="4">Betreutes_Wohnen</option>
-			<option value="4">Wohnheim</option>
-		<optgroup label="Textkategorie #5"></optgroup>
-			<option value="5">Hotel_bis_3_Sterne</option>
-			<option value="5">Hotel_ab_4_Sterne</option>
-			<option value="5">Ferienwohnung_Wochenendhaus</option>
-			<option value="5">Pension</option>
-			<option value="5">Appartmenthaus</option>
-			<option value="5">Gastronomiebtrieb</option>
-		<optgroup label="Textkategorie #6"></optgroup>
-			<option value="6">Kindergarten</option>
-			<option value="6">Kinderheim</option>
-		<optgroup label="Textkategorie #7"></optgroup>
-			<option value="7">Schule</option>
+		<option selected disabled value="">Objektart wählen..</option>
+		<option value="abbaugrundstueck">Abbaugrundstück</option>
+		<option value="aerztehaus">Ärztehaus</option>
+		<option value="akutkrankenhaus">Akutkrankenhaus</option>
+		<option value="appartmenthaus_boardinghaus">Appartment-/Boardinghaus</option>
+		<option value="ausbildungsstaette">Ausbildungsstätte</option>
+		<option value="ausstellungsgebaeude">Ausstellungsgebäude</option>
+		<option value="autohaus">Autohaus</option>
+		<option value="autohof">Autohof</option>
+		<option value="badebetrieb">Badebetrieb</option>
+		<option value="baumarkt">Baumarkt</option>
+		<option value="betreutes_wohnen">Betreutes Wohnen</option>
+		<option value="buero_und_geschaeftshaus">Büro- und Geschäftshaus</option>
+		<option value="buerogebaeude">Bürogebäude</option>
+		<option value="doppelhaushaelfte">Doppelhaushälfte</option>
+		<option value="eigentumswohnung">Eigentumswohnung</option>
+		<option value="einfamilienhaus">Einfamilienhaus</option>
+		<option value="einfamilienhaus_mit_einliegerwohnung">Einfamilienhaus mit Einliegerwohnung</option>
+		<option value="einfamilienhaus_mit_gewerbe">Einfamilienhaus mit Gewerbe</option>
+		<option value="einkaufszentrum">Einkaufszentrum</option>
+		<option value="fachmarktzentrum">Fachmarktzentrum</option>
+		<option value="ferienwohnung_wochenendhaus">Ferienwohnung/Wochenendhaus</option>
+		<option value="fitnesscenter">Fitnesscenter</option>
+		<option value="fluechtlingsheim">Flüchtlingsheim</option>
+		<option value="freizeitanlage">Freizeitanlage</option>
+		<option value="garagengebaeude">Garagengebäude</option>
+		<option value="geschaeftshaus">Geschäftshaus</option>
+		<option value="gastronomiebetrieb">Gastronomiebetrieb</option>
+		<option value="gewerbepark">Gewerbepark</option>
+		<option value="golfplatz">Golfplatz</option>
+		<option value="handwerksbetrieb">Handwerksbetrieb</option>
+		<option value="hochregallager">Hochregallager</option>
+		<option value="hotel">Hotel</option>
+		<option value="kaufhaus_warenhaus">Kauf-/Warenhaus</option>
+		<option value="kindergarten">Kindergarten</option>
+		<option value="kinderheim">Kinderheim</option>
+		<option value="kino">Kino</option>
+		<option value="krankenhaus">Krankenhaus</option>
+		<option value="lagergebaeude">Lagergebäude</option>
+		<option value="landwirtschaftliche_hofstelle">Landwirtschaftliche Hofstelle</option>
+		<option value="landwirtschaftliches_forstwirtschaftliches_grundstueck">Land-/Forstwirtschaftliches Grundstück</option>
+		<option value="landwirtschaftsgebaeude">Landwirtschaftsgebäude</option>
+		<option value="logistikzentrum">Logistikzentrum</option>
+		<option value="medizinisches_versorgungszentrum">Medizinisches Versorgungszentrum</option>
+		<option value="mehrfamilienhaus">Mehrfamilienhaus</option>
+		<option value="mikroappartment">Mikroappartment</option>
+		<option value="moebelmarkt">Möbelmarkt</option>
+		<option value="parkhaus">Parkhaus</option>
+		<option value="parkplatz">Parkplatz</option>
+		<option value="pension">Pension</option>
+		<option value="pflegeheim">Pflegeheim</option>
+		<option value="plattenbau">Plattenbau</option>
+		<option value="produktionsgebaeude">Produktionsgebäude</option>
+		<option value="rehaklinik_kurklinik">Reha-/Kurklinik</option>
+		<option value="reihenendhaus">Reihenendhaus</option>
+		<option value="reihenmittelhaus">Reihenmittelhaus</option>
+		<option value="reiterhof">Reiterhof</option>
+		<option value="resthof">Resthof</option>
+		<option value="sb_markt">SB-Markt</option>
+		<option value="schule">Schule</option>
+		<option value="sonstige_gewerbeimmobilie">Sonstige Gewerbeimmobilie</option>
+		<option value="sonstige_industrieimmobilie">Sonstige Industrieimmobilie</option>
+		<option value="studentenwohnheim">Studentenwohnheim</option>
+		<option value="tankstelle">Tankstelle</option>
+		<option value="teileigentum">Teileigentum</option>
+		<option value="tiefgarage">Tiefgarage</option>
+		<option value="unbebautes_grundstueck">Unbebautes Grundstück</option>
+		<option value="veranstaltungshalle_kulturelle_einrichtung">Veranstaltungshalle/Kulturelle Einrichtung</option>
+		<option value="verbrauchermarkt">Verbrauchermarkt</option>
+		<option value="verkehrsbau">Verkehrsbau</option>
+		<option value="waschanlage">Waschanlage</option>
+		<option value="werkstattgebaeude">Werkstattgebäude</option>
+		<option value="wohn_und_geschaeftshaus">Wohn- und Geschäftshaus</option>
+		<option value="wohnanlage">Wohnanlage</option>
+		<option value="wohnheim">Wohnheim</option>
+		<option value="zweifamilienhaus">Zweifamilienhaus</option>
 	</select>
 	<br>
-	<a href="https://github.com/PropTechTools/PTT-API-Solutions/blob/master/doc/object_categories.xlsx" target="_blank" style="color:#ff9800">Welche Textausgabe gibt es in den jeweiligen Textkategorien? -> Excelübersicht herunterladen!</a>
+	<a href="https://github.com/PropTechTools/PTT-API-Solutions/blob/master/ptt-mikro-api.md#overview" target="_blank" style="color:#ff9800">Welche Textausgabe gibt es in den jeweiligen Objektkategorie?</a>
 </div>
 
 <!--MICROLAGE BEARBEITUNG-->  
@@ -279,7 +268,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 <div id="Bearbeitung_micro">
 	<br>
 	<div>Stadtzentrum-Koordinaten (50.775396,6.086234)</div>
-	<input id="stadtzentrum" class="save" placeholder="Stadtzentrum-Koordinaten">
+	<input id="stadtzentrum" class="save" placeholder="latlng">
 
 	<h4>1.	Innerörtliche Lage:</h4>
 	<select id="inneroertliche_lage" class="save">
@@ -648,7 +637,7 @@ Test-Requester: <input readonly="readonly" type="text" id="requester" value="tes
 <div id="fazit">
     
 	<div id="div_wohnlage_karte">
-		<h4>10. Capital Immobilien Kompass:</h4>
+		<h4>10. Wohnlagenkarte:</h4>
 
 		<select id="wohnlage_karte" class="save">
 			<option disabled selected value="">Bitte wählen..</option>
