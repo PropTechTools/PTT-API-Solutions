@@ -29,7 +29,7 @@ function macrolage_search() {
 	var wirtschaftsstruktur3 = $('#wirtschaftsstruktur3').val();
 	
 	URL = "https://www.proptechapi.de/"+system+"/macrolage/json?"+
-	"apiKey="+apikey+
+	"apiKey="+apiKey+
 	"&name="+name+
 	"&requester="+requester+
 	"&latlng="+latlng+
