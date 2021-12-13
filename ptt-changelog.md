@@ -19,3 +19,4 @@
 * 2021-04-14 [v0.0.7.4] Mikrolage-API: Reducing obligatory requestparameter.`stadtzentrum`, `aerztliche_primaerversorgung_ort_koordinate` and `aperiodischer_bedarf_ort_koordinate` are not obligatory anymore.
 * 2021-04-29 [v0.0.8.3] Bugfixes und Worttrennungsupdate "-/ " => "-"
 * 2021-09-20 [v0.0.9.1] <br>- makrolage request parameters `communitykey` DEPRECATED <br>- makrolage request parameters `address` DEPRECATED<br> - removing `requester` as an option => becomes obligatory for order-api <br>- makrolage request parameter `address` is deprecated <br>- makrolage request parameter `communityKey` is deprecated <br>- refractoring all parameters of `objektkategorie`, all old parameters will continue working
+* 2021-12-12 [v0.0.9.2] Adding request parameter `language` for Makrolage-API and Mikrolage-API
