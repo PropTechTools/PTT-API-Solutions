@@ -159,6 +159,7 @@ The following two options are not for text modification but internal api options
 |:---|:---|:---|:---|:---|
 | auto_analysis | see [b) Advanced Integration](#adv) for more information | optional | `""` | `""`,`false`,`true` |
 | data | returns coordinates to visualise points of interests on which the text is based on| optional | `""` | `""`,`false`,`true` |
+| language | returns text in the requested language| optional | `""` | `""`,`DE`,`EN`,`ES` |
 
 ***
 ### <a name="overview"></a>Overview of textvariants depending on requestparameter `objektkategorie`:
