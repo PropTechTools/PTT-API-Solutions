@@ -6,9 +6,7 @@ This is the End user manual for using the PTT API-Solutions.
 **Attention:** The user and api-key shown below belong to a test account whose request range is limited to five communities only. 
 <br/>
 <br/>
-**Test-User:** sYp4kEAtyUnH67K1
-<br/>
-**Test-ApiKey:** gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU
+**Test-ApiKey:** sYp4kEAtyUnH67K1!gI1Nl-ikJsboXBKJqnW-V1fz2rJYOzQ4zg93Y8PU
 <br/>
 **Test-Requester:** test@proptechtools.de
 <br/>
@@ -30,7 +28,6 @@ Changing from DTE-System to Live-System (with access to the complete database) i
 * Delete the `dte` in URL: www.proptechapi.de/dte/macrolage/json... => www.proptechapi.de/macrolage/json...
 * Update to your personal PTT-credentials (all credentials can be found in your webplattformaccount (accountmanagment):
     * apiKey
-    * name
     * requester
 
 <br/>
