@@ -21,3 +21,4 @@
 * 2021-09-20 [v0.0.9.1] <br>- makrolage request parameters `communitykey` DEPRECATED <br>- makrolage request parameters `address` DEPRECATED<br> - removing `requester` as an option => becomes obligatory for order-api <br>- makrolage request parameter `address` is deprecated <br>- makrolage request parameter `communityKey` is deprecated <br>- refractoring all parameters of `objektkategorie`, all old parameters will continue working
 * 2021-12-12 [v0.0.9.2] Adding request parameter `language` for Makrolage-API and Mikrolage-API
 * 2022-04-22 [v0.0.10.1] Merging authentification parameters `apiname` and `apiKey` into a single parameter `apiKey` (=> `apiname`+!+`apiKey`)
+* 2022-09-19 [v0.0.10.1-rc9] Adding missing option `unbebaut`to `umgebungsbebauung1` and `...2`, adding dependency to all `umgebungsbebauungX` fields, applying formatting to tables 
