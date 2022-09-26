@@ -50,6 +50,7 @@ Innerörtliche-Lage-options can always be used independent of the chosen `objekt
 | fussgaengerzone                  | checkbox    | optional   | `false`     | `true`,`false`                                               |
 | separiert                        | checkbox    | optional   | `false`     | `true`,`false`                                               |
 | randlage                         | checkbox    | optional   | `false`     | `true`,`false`                                               |
+
 #### 2. Art der baulichen Nutzung:
 Bauliche-Nutzung-options can always be used independent of the chosen `objektkategorie`:
 | Property             | Input-Type | Mandatory? | Default | Possible Values                                                                                                                                                                                              |
@@ -133,9 +134,9 @@ Naherholungsmöglichkeiten-options can only be used if one of the follwing `obje
 #### <a name="aperiodisch"></a>9. Aperiodischer Bedarf:
 Aperiodischer Bedarf options can only be used if one of the follwing `objektkategorie` is chosen: `betreutes_wohnen`, `doppelhaushaelfte`, `eigentumswohnung`, `einfamilienhaus`, `einfamilienhaus_mit_gewerbe`, `fluechtlingsheim`, `mehrfamilienhaus`, `mikroappartment`, `pflegeheim`, `plattenbau`, `rehaklinik_kurklinik`, `reihenendhaus`, `reihenmittelhaus`, `studentenwohnheim`, `wohn_und_geschaeftshaus`, `wohnanlage`, `wohnheim`, `zweifamilienhaus` ([Overview](#overview)).
  
-| Property             | Input-Type | Mandatory? | Default | Possible Values                                 |
-|:-------------------- |:---------- |:---------- |:------- |:----------------------------------------------- |
-| aperiodischer_bedarf | dropdown   | optional   | `""`    | `""`,`vollstaendig`,`weitestgehend`,`teilweise` | 
+| Property             | Input-Type | Mandatory? | Default | Possible Values                                                 |
+|:-------------------- |:---------- |:---------- |:------- |:--------------------------------------------------------------- |
+| aperiodischer_bedarf | dropdown   | optional   | `""`    | `""`,`vollstaendig`,`weitestgehend`,`teilweise`, `unzureichend` | 
 
 #### <a name="wohnlage"></a>10. Wohnlage:
 Wohnlage options can only be used if one of the follwing `objektkategorie` is chosen: `betreutes_wohnen`, `doppelhaushaelfte`, `eigentumswohnung`, `einfamilienhaus`, `einfamilienhaus_mit_gewerbe`, `fluechtlingsheim`, `mehrfamilienhaus`, `mikroappartment`, `pflegeheim`, `plattenbau`, `rehaklinik_kurklinik`, `reihenendhaus`, `reihenmittelhaus`, `studentenwohnheim`, `wohn_und_geschaeftshaus`, `wohnanlage`, `wohnheim`, `zweifamilienhaus` ([Overview](#overview)).
