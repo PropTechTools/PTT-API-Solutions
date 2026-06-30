@@ -1,5 +1,5 @@
 > [!WARNING]  
-> ### The PTT-API-Solutions will be officially deprecated and shut down on August 31, 2026. It will be replaced with the new PTT API-Solutions V2. Please follow the migration instructions [here](https://www.postman.com/proptechtools/ptt-api-solutions-v2/folder/59wvngi/indirect-call-via-vue-backend?sideView=agentMode).
+> ### The PTT-API-Solutions will be officially deprecated and shut down on August 31, 2026. It will be replaced with the new PTT API-Solutions V2. Please follow the migration instructions [here](https://www.postman.com/proptechtools/ptt-api-solutions-v2/collection/ue5fc3j/proptechtools-api-v2?sideView=agentMode).
 > ### Thank you for using PTT API-Solutions.
 
 # PTT API-Solutions
